@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/fonts/woff2/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../assets/fonts/woff/AvenirNextLTPro-Regular.woff") format("woff"), url("../assets/fonts/ttf/AvenirNextLTPro-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: AvenirNext LT Pro;
+}
+
+ul {
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  padding-top: 1rem;
+  border-bottom: 1px solid white;
+  background-color: #323232;
+}
+
+@media screen and (min-width: 48rem) {
+  .nav {
+    border-bottom-color: lightblue;
+  }
+}
+.nav__logo {
+  max-height: 20px;
+  display: flex;
+  justify-content: center;
+}
+.nav__navi {
+  display: flex;
+  width: 100%;
+}
+.nav__navi-item {
+  display: inline-flex;
+  width: 100%;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0.75rem 0.5rem;
+  font-weight: 700;
+}
+.nav__navi-link {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #323232;
+  opacity: 50%;
+  background-image: url(../assets/images/hero-bio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 280px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.hero__title {
+  color: white;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.about__title {
+  margin-left: 1rem;
+}
+.about__container-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+}
+.about__container-1-image {
+  width: 100%;
+}
+.about__container-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+}
+
+.gallery {
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+}
+.gallery__title {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+.gallery__image {
+  padding: 0.5rem 1rem;
+}
+
+.footer {
+  background-color: #323232;
+  color: #FAFAFA;
+}
+.footer__title {
+  font-weight: 700;
+}/*# sourceMappingURL=bio.css.map */
