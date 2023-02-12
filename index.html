@@ -10,27 +10,35 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <a class="nav__logo" href="./index.html"><img src="./assets/logos/Logo-bandsite.svg" alt="bandsite logo"></a>
-            <ul class="nav__navi">
-                <li class="nav__navi-item"><a class="nav__navi-link" href="./index.html"><div>Biography</div></a></li>
-                <li class="nav__navi-item"><a class="nav__navi-link" href="#">Shows</a></li>
+            <a class="nav__logo" href="./index.html"><img class="nav__img-logo" src="./assets/logos/Logo-bandsite.svg" alt="bandsite logo"></a>
+            <ul class="nav__lists">
+                <li class="nav__list"><a class="nav__link" href="./index.html"><div>Biography</div></a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Shows</a></li>
             </ul>
         </nav>
     </header>
     <main>
+
         <section class="hero">
+            <div class="hero__overlay"></div>
             <h1 class="hero__title">The Bee Knees</h1>
         </section>
+
+
         <section class="about">
             <h2 class="about__title">About the Musicians</h2>
-            <div class="about__container-1">
-                <img class="about__container-1-image" src="assets/images/band.jpg" alt="main live concert image">
-                <h3 class="about__container-1-quote">“We push each other to be the best. It’s not uncommon for one of us to say ‘this needs to be better, back to the drawing board’”</h3>
-                <h4 class="about__container-1-auth">Bryan Teddy, lead vocalist of The Bees Knees</h4>
+            <div class="about__container-bio">
+                <img class="about__image" src="assets/images/band.jpg" alt="main live concert image">
+                <h3 class="about__quote">“We push each other to be the best. 
+                    It’s not uncommon for one of us to say ‘this needs to be better, 
+                    back to the drawing board’”
+                </h3>
+                <h4 class="about__auth">Bryan Teddy, lead vocalist of The Bees Knees</h4>
             </div>
-            <article class="about__container-2">
-                <h3 class="about__container-2-title">The Bees Knees</h3>
-                <p class="about__container-2-para1">The Bees Knees is a pop rock band originating from San Francisco, California. 
+            <article class="about__container-des">
+                <h3 class="about__title">The Bees Knees</h3>
+                <p class="about__para-1">
+                    The Bees Knees is a pop rock band originating from San Francisco, California. 
                     The band consists of lead vocalist Bryan Teddy, guitarist Mack Tolkens, 
                     guitarist Andrew Green, bassist Kent Zulkee and drummer Freddie Fischer. 
                     The band achieved its first commercial success as an unsigned act, drawing attention 
@@ -38,7 +46,7 @@
                     One Trick Pony, The Cat’s Meow), Adams was confident the band could succeed even further, 
                     pushing them to sign with Magenta Records.
                 </p>
-                <p class="about_container-2-para2">
+                <p class="about__para-2">
                     From there, the band has soared, gaining international recognition and ranking in the top 
                     10 on the Poster Charts. New fans immediately fell in love with the band’s original and 
                     organic attitude, solidifying their place as one of the hottest and fastest up and coming 
@@ -51,26 +59,28 @@
         </section>
         <section class="gallery">
             <h2  class="gallery__title" >Photo Gallery</h2> 
-            <img class="gallery__image" src="assets/images/Photo-gallery-1.jpg" alt="">
-            <img class="gallery__image" src="assets/images/Photo-gallery-2.jpg" alt="">
-            <img class="gallery__image" src="assets/images/Photo-gallery-3.jpg" alt="">
-            <img class="gallery__image" src="assets/images/Photo-gallery-4.jpg" alt="">
-            <img class="gallery__image" src="assets/images/Photo-gallery-5.jpg" alt="">
-            <img class="gallery__image" src="assets/images/Photo-gallery-6.jpg" alt="">
-            <img class="gallery__image" src="assets/images/Photo-gallery-7.jpg" alt="">
-            <img class="gallery__image" src="assets/images/Photo-gallery-8.jpg" alt="">
-            <img class="gallery__image" src="assets/images/Photo-gallery-9.jpg" alt="">
+            <div class="gallery__container">
+                <img class="gallery__image" src="assets/images/Photo-gallery-1.jpg" alt="">
+                <img class="gallery__image" src="assets/images/Photo-gallery-2.jpg" alt="">
+                <img class="gallery__image" src="assets/images/Photo-gallery-3.jpg" alt="">
+                <img class="gallery__image" src="assets/images/Photo-gallery-4.jpg" alt="">
+                <img class="gallery__image" src="assets/images/Photo-gallery-5.jpg" alt="">
+                <img class="gallery__image" src="assets/images/Photo-gallery-6.jpg" alt="">
+                <img class="gallery__image" src="assets/images/Photo-gallery-7.jpg" alt="">
+                <img class="gallery__image" src="assets/images/Photo-gallery-8.jpg" alt="">
+                <img class="gallery__image" src="assets/images/Photo-gallery-9.jpg" alt="">
+            </div>
         </section>
     </main>
     <footer class="footer">
         <h2 class="footer__title">Get in Touch</h2>
         <div class="footer__social">
-            <img class="footer__social-image" src="./assets/icons/Icon-instagram.svg">
-            <img class="footer__social-image" src="./assets/icons/Icon-facebook.svg">
-            <img class="footer__social-image" src="./assets/icons/Icon-twitter.svg">
+            <img class="footer__image" src="./assets/icons/Icon-instagram.svg">
+            <img class="footer__image" src="./assets/icons/Icon-facebook.svg">
+            <img class="footer__image" src="./assets/icons/Icon-twitter.svg">
         </div>
         <div class="footer__contact">
-            <div class="footer__contact-container">
+            <div class="footer__container-contact">
                 <h4>
                     Cam Adams <br>
                     The Bees Knees Management
@@ -81,7 +91,7 @@
 
                 </p>
             </div>
-            <div class="footer__contact-container">
+            <div class="footer__container-contact">
                 <h4>
                     Pearl Gregg <br>
                     Limitless Artist Group
@@ -91,7 +101,7 @@
                 </p>
                 <p>pearl.gregg@limitlessag.com</p>
             </div>
-            <div class="footer__contact-container">
+            <div class="footer__container-contact">
                 <h4>
                     Carson Whyte <br>
                     ARCH Entertainment
@@ -103,8 +113,8 @@
 
             </div>
         </div>
-        <img src="assets/logos/Logo-bandsite.svg" alt="bandsite logo">
-        <p class="">Copyright The Bees Knees © 2021 All Rights Reserved</p>
+        <img class="footer__image-logo" src="assets/logos/Logo-bandsite.svg" alt="bandsite logo">
+        <p class="footer__copyright">Copyright The Bees Knees © 2021 All Rights Reserved</p>
     </footer>
     
 </body>
