@@ -5,18 +5,30 @@
          url("../assets/fonts/ttf/AvenirNextLTPro-Regular.ttf") format("ttf");
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+
   }
 
+
+  @font-face {
+    font-family: 'AvenirNextLTPro-Demi';
+    src: url("../assets/fonts/woff2/AvenirNextLTPro-Demi.woff2") format('woff2'),
+        url("../assets/fonts/woff/AvenirNextLTPro-Demi.woff") format('woff'),
+        url("../assets/fonts/ttf/AvenirNextLTPro-Demi.woff.ttf") format("ttf");
+    font-weight: 600;
+    font-style: normal;
+
+}
 
 
 
   @font-face {
-    font-family: 'AvenirNext LT Pro';
-    src: url('../assets/fonts/woff2/AvenirNextLTPro-Demi.woff2') format('woff2'),
-        url('../assets/fonts/woff/AvenirNextLTPro-Demi.woff') format('woff'),
-        url("../assets/fonts/ttf/AvenirNextLTPro-Demi.woff.ttf") format("ttf");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
+    font-family: "AvenirNext LT Pro";
+    src: url("../assets/fonts/woff2/AvenirNextLTPro-Bold.woff2") format("woff2"), 
+         url("../assets/fonts/woff/AvenirNextLTPro-Bold.woff") format("woff"),
+         url("../assets/fonts/ttf/AvenirNextLTPro-Bold.ttf") format("ttf");
+    font-weight: 700;
+    font-style: bold;
+  }
+
+
+

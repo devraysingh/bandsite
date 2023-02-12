@@ -15,7 +15,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: $site-font;
+    font-family: $body-font;
+    color:  #323232;
   }
 
 ul {
@@ -28,6 +29,7 @@ li {
     list-style: none;
    
 }
+
 
 
 
@@ -60,17 +62,25 @@ li {
         justify-content: center;
 
         @include tablet {
-            margin-left: 3rem;
+         
             max-height: 26px;  
             align-items: center;
+            margin: auto 1rem auto 2rem;
 
 
         }
     }
 
+
     &__lists{
         display: flex;
         width: 100%;
+        font-family: $subheader-font;
+        @include tablet{
+            width: 30%;
+            
+     
+        }
 
     }
 
@@ -120,9 +130,14 @@ li {
     &__title {
         color: white;
         position: absolute;
-        margin-left: 1rem;
+        margin-left: 2rem;
         font-size: 1.5rem;
         z-index: 1;
+
+        @include tablet {
+            font-size: 3.4rem;
+            font-family: $subheader-font;
+        }
     }
 
     @include tablet{
@@ -130,36 +145,120 @@ li {
     }
 
 
+    @include desktop{
+        height: 580px;
+    }
+
+
+
 }
 
 
 .about{
+    @include tablet{
+        width: 90%;
+        display: flexbox;
+        margin: auto;
 
-    &__title {
-        margin-left: 1rem;
+    }
+
+    &__title-sec {
+        margin-left: 0rem;
         font-weight: 600;
+        font-family: $subheader-font; 
+        margin: auto 1rem auto 1rem;
+        margin-top: 1.5rem;
+
+        @include tablet{
+            font-size: 2.2rem;
+     
+        }
+        
+
     }
 
     &__container-bio{
         display: flex;
         flex-direction: column;    
-        width: 100%;
-        padding: 1rem;        
+        width: 90%;
+        padding: 1rem;     
+        margin: auto;   
     }
     &__image {
         object-fit: cover;
-        // object-position: 0 20%;
+        aspect-ratio: 16/9;
         width: 100%;
         object-position: bottom;
         width: 100%;
-        max-height: 12.5rem;
+
+        max-height: 20rem;
+
+        @include tablet {
+
+            max-height: 38rem;
+        }  
+        @include desktop {
+
+        }
     }
+    &__quote{
+        margin: 1.5rem auto auto auto;
+        line-height: 2rem;
+        font-family: $subheader-font;
+        flex-wrap: wrap;
+        @include tablet{
+            font-size: 1.5rem;
+     
+        }
+
+    }
+
+    &__auth{
+        margin: 1rem auto auto 0;
+        font-weight: 600;
+        font-family: $subheader-font;
+
+
+    }
+
     &__container-des{
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 1rem;
+        @include tablet{
+            width: 90%;
+            display: flexbox;
+            margin: auto;
+
+    
+        }
         
+    }
+
+    &__title-des {
+        margin-left: 0rem;
+        font-weight: 700;
+  
+        
+
+    }
+
+    
+    &__para-container{
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+        }
+
+    }
+
+    &__para{
+        @include tablet {
+            padding: 0rem auto 0rem 2rem;
+        }
+
     }
 
 
@@ -170,15 +269,23 @@ li {
     background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
+    padding:2.4rem 1.6rem;
+
     &__title {
 
-        margin-left: 1rem;
-        font-size: 1.5rem;
+
+        font-size: 2.2rem;
+        font-weight: 600;
+        font-family: $subheader-font;
+   
+
+
     }
     &__image {
-        padding: 0.5rem 1rem ;
+        padding: 1rem 0rem ;
         @include tablet {
             width: 33%;
+            padding: 0.8rem 0.8rem ;
         
         }
         
@@ -199,16 +306,80 @@ li {
 }
 
 .footer {
+    padding:2.4rem 1.6rem;
     background-color: #323232;
     color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
 
     &__title {
-        font-weight: 700;
+        
         margin-bottom: 0;
         padding-bottom: 0;
+        order: 1;
+        font-size: 2.25rem;
+    
+        font-family: "AvenirNextLTPro-Demi";
+        font-weight: 500;
     }
+
+    &__social{
+        order: 2;
+        @include tablet{
+            margin:2.5rem 0 0 2rem;
+        }
+        @include tablet{
+            margin:2.5rem 0 0 5rem;
+        }
+    }
+
+
+    &__contact{
+        order: 3;
+        @include tablet {
+            order: 4;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+
+        }
+    }
+
+    &__container-contact{
+        @include tablet {
+            width: 33%;
+        }
+
+    }
+
+    &__image-logo{
+        order: 4;
+        @include tablet {
+            order: 3;
+            margin: 0rem 0rem;
+            padding: 0rem 0rem;
+            max-height: 40px;
+            
+        }
+    }
+
     &__copyright {
-        margin-bottom: 0;
+        order: 5;
+        @include tablet{
+            margin-top: 2.4rem;
+        }
+        @include desktop{
+            margin-top: 5rem;
+        }
+    }
+
+    @include tablet {
+        padding:3rem 3.6rem 2.4rem 3.6rem;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
     }
 
 }
