@@ -93,6 +93,10 @@ li {
   font-weight: 700;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  -webkit-margin-start: 0rem;
+          margin-inline-start: 0rem;
+  -webkit-margin-end: 0rem;
+          margin-inline-end: 0rem;
 }
 .nav__list--active {
   font-family: "AvenirNextLTPro";
@@ -238,9 +242,12 @@ li {
     flex-direction: row;
   }
 }
+.about__para {
+  margin-bottom: 1rem;
+}
 @media screen and (min-width: 48rem) {
   .about__para {
-    padding: 0rem auto 0rem 2rem;
+    padding: 0rem 3rem 0rem 0rem;
   }
 }
 
@@ -248,7 +255,7 @@ li {
   background-color: #FAFAFA;
   display: flex;
   flex-direction: column;
-  padding: 2.4rem 1.6rem;
+  padding: 2.4rem 1.6rem 0rem 1.6rem;
 }
 .gallery__title {
   font-size: 2.2rem;
@@ -272,8 +279,15 @@ li {
   .gallery__container {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  .gallery {
+    padding: 3rem 9rem 3rem 9rem;
+  }
+}
+
 .footer {
   padding: 2.4rem 1.6rem;
   background-color: #323232;
@@ -321,6 +335,11 @@ li {
     width: 100%;
   }
 }
+@media screen and (min-width: 80rem) {
+  .footer__contact {
+    justify-content: start;
+  }
+}
 .footer__container-contact {
   margin-top: 2rem;
   font-size: 16px;
@@ -336,9 +355,13 @@ li {
 }
 .footer__image-logo {
   order: 4;
+  width: 12.5rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
 }
 @media screen and (min-width: 48rem) {
   .footer__image-logo {
+    width: 8.5rem;
     order: 3;
     margin: 0rem 0rem;
     padding: 0rem 0rem;
@@ -364,5 +387,10 @@ li {
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .footer {
+    padding: 3rem 10rem 3rem 10rem;
   }
 }/*# sourceMappingURL=bio.css.map */
