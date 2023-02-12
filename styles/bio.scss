@@ -51,9 +51,6 @@ li {
     @include tablet {
         display: flex;
         height: 4.5rem;
-
-
-
     }
 
     &__logo {
@@ -75,11 +72,16 @@ li {
     &__lists{
         display: flex;
         width: 100%;
-        font-family: $subheader-font;
+        margin-block-start: 0;
+        justify-content: center;
+
+    
+
+
+    
         @include tablet{
-            width: 30%;
-            
-     
+            width: 30%;  
+
         }
 
     }
@@ -92,10 +94,19 @@ li {
         justify-content: center;
         align-items: center;
         color: white;
-        padding: 0.75rem 0.5rem;
+        margin: auto 2rem auto 2rem;
         font-weight: 700;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        &--active{
+            font-family: "AvenirNextLTPro";
+            font-weight: bold;
+            border-bottom: 4px #FFFFFF solid;
+        }
         @include tablet {
             padding: 0rem;
+            font-size: 14px;
+            font-family: $subheader-font;
         }
     
     }
@@ -103,6 +114,7 @@ li {
     &__link {
         color: white;
         text-decoration: none;
+        border-bottom: 1px solid whe;
 
     }
 }
@@ -141,7 +153,7 @@ li {
     }
 
     @include tablet{
-        height: 400px;
+        height: 530px;
     }
 
 
@@ -166,8 +178,8 @@ li {
         margin-left: 0rem;
         font-weight: 600;
         font-family: $subheader-font; 
-        margin: auto 1rem auto 1rem;
-        margin-top: 1.5rem;
+        margin: 2.75rem 1rem 1rem 1rem;
+
 
         @include tablet{
             font-size: 2.2rem;
@@ -202,7 +214,7 @@ li {
         }
     }
     &__quote{
-        margin: 1.5rem auto auto auto;
+        margin: 1.6rem auto auto auto;
         line-height: 2rem;
         font-family: $subheader-font;
         flex-wrap: wrap;
@@ -239,6 +251,7 @@ li {
     &__title-des {
         margin-left: 0rem;
         font-weight: 700;
+        margin-bottom: 1.5rem;
   
         
 
@@ -246,6 +259,7 @@ li {
 
     
     &__para-container{
+        line-height: 1.5;
 
         @include tablet {
             display: flex;
@@ -314,6 +328,7 @@ li {
     margin: auto;
 
 
+
     &__title {
         
         margin-bottom: 0;
@@ -327,13 +342,28 @@ li {
 
     &__social{
         order: 2;
+        display: flex;
+        align-items: center;
+        
         @include tablet{
-            margin:2.5rem 0 0 2rem;
+           flex-basis: 444px;
+           margin-left: 2rem;
         }
-        @include tablet{
-            margin:2.5rem 0 0 5rem;
+        @include desktop {
+
         }
     }
+
+    &__image {
+  
+        padding: 1rem 1rem 0rem 0rem;
+        
+        @include tablet{
+            padding-top: 0;
+        }
+      
+    }
+
 
 
     &__contact{
@@ -342,17 +372,27 @@ li {
             order: 4;
             display: flex;
             flex-direction: row;
-            margin: auto;
+            justify-content: space-between;
+            width: 100%;
 
         }
     }
 
     &__container-contact{
+        margin-top: 2rem;
+        font-size: 16px;
+        line-height: 1.5;
         @include tablet {
             width: 33%;
+           
         }
-
     }
+
+
+     &__contact-title{
+        font-family: $subheader-font;
+     }
+
 
     &__image-logo{
         order: 4;
@@ -376,7 +416,7 @@ li {
     }
 
     @include tablet {
-        padding:3rem 3.6rem 2.4rem 3.6rem;
+        padding:3rem 2.2rem 2.4rem 2.2rem;
         flex-wrap: wrap;
         flex-direction: row;
         position: relative;
