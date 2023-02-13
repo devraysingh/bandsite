@@ -148,6 +148,11 @@ li {
     font-family: "AvenirNextLTPro-Demi";
   }
 }
+@media screen and (min-width: 80rem) {
+  .hero__title {
+    font-size: 5rem;
+  }
+}
 @media screen and (min-width: 48rem) {
   .hero {
     height: 530px;
@@ -155,7 +160,7 @@ li {
 }
 @media screen and (min-width: 80rem) {
   .hero {
-    height: 580px;
+    height: 600px;
   }
 }
 
@@ -170,7 +175,7 @@ li {
   margin-left: 0rem;
   font-weight: 600;
   font-family: "AvenirNextLTPro-Demi";
-  margin: 2.75rem 1rem 1rem 1rem;
+  margin: 2.75rem 0rem 1rem 0rem;
 }
 @media screen and (min-width: 48rem) {
   .about__title-sec {
@@ -247,10 +252,10 @@ li {
 }
 @media screen and (min-width: 48rem) {
   .about__para {
-    padding: 0rem 3rem 0rem 0rem;
+    padding: 0rem 2.4rem 0rem 0rem;
+    font-size: 0.8rem;
   }
 }
-
 .gallery {
   background-color: #FAFAFA;
   display: flex;
@@ -268,7 +273,7 @@ li {
 @media screen and (min-width: 48rem) {
   .gallery__image {
     width: 33%;
-    padding: 0.8rem 0.8rem;
+    padding: 0.8rem 1rem 0.8rem 0rem;
   }
 }
 .gallery__container {
@@ -284,7 +289,7 @@ li {
 }
 @media screen and (min-width: 80rem) {
   .gallery {
-    padding: 3rem 9rem 3rem 9rem;
+    padding: 3rem 4rem 1rem 4rem;
   }
 }
 
@@ -311,7 +316,7 @@ li {
 }
 @media screen and (min-width: 48rem) {
   .footer__social {
-    flex-basis: 444px;
+    flex-grow: 1;
     margin-left: 2rem;
   }
 }
@@ -338,6 +343,7 @@ li {
 @media screen and (min-width: 80rem) {
   .footer__contact {
     justify-content: start;
+    width: 77%;
   }
 }
 .footer__container-contact {
@@ -349,6 +355,10 @@ li {
   .footer__container-contact {
     width: 33%;
   }
+}
+.footer__email {
+  color: white;
+  text-decoration: none;
 }
 .footer__contact-title {
   font-family: "AvenirNextLTPro-Demi";
@@ -378,7 +388,7 @@ li {
 }
 @media screen and (min-width: 80rem) {
   .footer__copyright {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 }
 @media screen and (min-width: 48rem) {
