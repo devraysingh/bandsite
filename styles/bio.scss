@@ -204,6 +204,8 @@ a {
 
 // About Section SAS
 .about{
+    padding: 1rem;
+
     @include tablet{
         width: 90%;
         display: flexbox;
@@ -269,6 +271,12 @@ a {
         flex-wrap: wrap;
         @include tablet{
             font-size: 1.5rem;
+            margin: 1.6rem 0rem;
+     
+        }
+        @include desktop{
+            justify-content: flex-start;
+            width: 66%;
      
         }
 

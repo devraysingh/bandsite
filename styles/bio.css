@@ -201,6 +201,9 @@ a {
   }
 }
 
+.about {
+  padding: 1rem;
+}
 @media screen and (min-width: 48rem) {
   .about {
     width: 90%;
@@ -265,6 +268,13 @@ a {
 @media screen and (min-width: 48rem) {
   .about__quote {
     font-size: 1.5rem;
+    margin: 1.6rem 0rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .about__quote {
+    justify-content: flex-start;
+    width: 66%;
   }
 }
 .about__auth {
