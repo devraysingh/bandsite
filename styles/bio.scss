@@ -1,7 +1,9 @@
+//Importing Dependices
 @use 'partials/mixins' as *;
 @use 'partials/fonts' as *;
 @use 'partials/variables' as *;
 
+//Boilder Plate Setup
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -9,8 +11,6 @@
 
   
 }
-
-
 
 body {
     margin: 0;
@@ -32,7 +32,7 @@ li {
 
 
 
-
+// Header Section SASS
 .header {
     padding-top: 1rem;
     border-bottom: 1px solid white;
@@ -46,8 +46,14 @@ li {
     }
 
 }
-  
+// Nav Section Sass
 .nav {
+    background-color: #323232;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
     @include tablet {
         display: flex;
         height: 4.5rem;
@@ -66,6 +72,10 @@ li {
 
 
         }
+
+        @include desktop {
+            margin-left: 5rem;
+        }
     }
 
 
@@ -75,12 +85,9 @@ li {
         margin-block-start: 0;
         justify-content: center;
 
-    
-
-
-    
         @include tablet{
             width: 30%;  
+            justify-content: start;
 
         }
 
@@ -98,8 +105,7 @@ li {
         font-weight: 700;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        margin-inline-start: 0rem;
-        margin-inline-end: 0rem;
+
         &--active{
             font-family: "AvenirNextLTPro";
             font-weight: bold;
@@ -109,6 +115,9 @@ li {
             padding: 0rem;
             font-size: 14px;
             font-family: $subheader-font;
+            width: auto;
+            display: flex;
+            justify-content: baseline;
         }
     
     }
@@ -120,7 +129,7 @@ li {
 
     }
 }
-
+// Hero Section SASS
 .hero {
 
     background-image: url(../assets/images/hero-bio.jpg);
@@ -144,7 +153,7 @@ li {
     &__title {
         color: white;
         position: absolute;
-        margin-left: 2rem;
+        margin-left: 3rem;
         font-size: 1.5rem;
         z-index: 1;
 
@@ -163,14 +172,14 @@ li {
 
 
     @include desktop{
-        height: 600px;
+        height: 630px;
     }
 
 
 
 }
 
-
+// About Section SAS
 .about{
     @include tablet{
         width: 90%;
@@ -289,7 +298,7 @@ li {
 
 
 }
-
+// Gallery Section SASS
 .gallery{
     background-color: #FAFAFA;
     display: flex;
@@ -326,7 +335,7 @@ li {
         padding: 3rem 4rem 1rem 4rem;
     }
 }
-
+// Footer Section SASS
 .footer {
     padding:2.4rem 1.6rem;
     background-color: #323232;
@@ -448,7 +457,7 @@ li {
     }
 
     @include desktop{
-        padding:3rem 10rem 3rem 10rem;
+        padding:3rem 5.5rem 3rem 4.5rem;
     }
 
 

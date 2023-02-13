@@ -51,6 +51,13 @@ li {
   }
 }
 
+.nav {
+  background-color: #323232;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
 @media screen and (min-width: 48rem) {
   .nav {
     display: flex;
@@ -69,6 +76,11 @@ li {
     margin: auto 1rem auto 2rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  .nav__logo {
+    margin-left: 5rem;
+  }
+}
 .nav__lists {
   display: flex;
   width: 100%;
@@ -79,6 +91,7 @@ li {
 @media screen and (min-width: 48rem) {
   .nav__lists {
     width: 30%;
+    justify-content: start;
   }
 }
 .nav__list {
@@ -93,10 +106,6 @@ li {
   font-weight: 700;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  -webkit-margin-start: 0rem;
-          margin-inline-start: 0rem;
-  -webkit-margin-end: 0rem;
-          margin-inline-end: 0rem;
 }
 .nav__list--active {
   font-family: "AvenirNextLTPro";
@@ -108,6 +117,9 @@ li {
     padding: 0rem;
     font-size: 14px;
     font-family: "AvenirNextLTPro-Demi";
+    width: auto;
+    display: flex;
+    justify-content: baseline;
   }
 }
 .nav__link {
@@ -138,7 +150,7 @@ li {
 .hero__title {
   color: white;
   position: absolute;
-  margin-left: 2rem;
+  margin-left: 3rem;
   font-size: 1.5rem;
   z-index: 1;
 }
@@ -160,7 +172,7 @@ li {
 }
 @media screen and (min-width: 80rem) {
   .hero {
-    height: 600px;
+    height: 630px;
   }
 }
 
@@ -401,6 +413,6 @@ li {
 }
 @media screen and (min-width: 80rem) {
   .footer {
-    padding: 3rem 10rem 3rem 10rem;
+    padding: 3rem 5.5rem 3rem 4.5rem;
   }
 }/*# sourceMappingURL=bio.css.map */
