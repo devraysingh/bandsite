@@ -338,7 +338,7 @@ a {
 @media screen and (min-width: 48rem) {
   .gallery__image {
     width: 33.3%;
-    padding: 0.8rem 1rem 0.8rem 0rem;
+    padding: 0.9rem 1.8rem 0.9rem 0rem;
   }
 }
 .gallery__image--cornor {
