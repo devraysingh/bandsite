@@ -121,7 +121,6 @@ a {
   padding-bottom: 1rem;
 }
 .nav__list--nonactive:hover {
-  margin: auto 2rem auto 2rem;
   font-family: "AvenirNext LT Pro";
   border-bottom: 4px #FFFFFF solid;
 }
@@ -137,6 +136,7 @@ a {
     width: auto;
     display: flex;
     justify-content: baseline;
+    margin: auto 2rem auto 2rem;
   }
 }
 .nav__link {

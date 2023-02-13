@@ -114,12 +114,10 @@ a {
         justify-content: center;
         align-items: center;
         color: white;
-
         font-weight: 700;
         padding-top: 1rem;
         padding-bottom: 1rem;
         &--nonactive:hover{
-                    margin: auto 2rem auto 2rem;
             font-family: $body-font;
             border-bottom: 4px $white-color solid;
         }
@@ -130,13 +128,13 @@ a {
         }
     
         @include tablet {
- //           margin: auto 2rem auto 2rem;
             padding: 0rem;
             font-size: 0.875rem;
             font-family: $subheader-font;
             width: auto;
             display: flex;
             justify-content: baseline;
+            margin: auto 2rem auto 2rem;
         }
     }
 
