@@ -116,12 +116,12 @@ a {
   justify-content: center;
   align-items: center;
   color: white;
-  margin: auto 2rem auto 2rem;
   font-weight: 700;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 .nav__list--nonactive:hover {
+  margin: auto 2rem auto 2rem;
   font-family: "AvenirNext LT Pro";
   border-bottom: 4px #FFFFFF solid;
 }
@@ -131,6 +131,7 @@ a {
 }
 @media screen and (min-width: 48rem) {
   .nav__list {
+    margin: auto 2rem auto 2rem;
     padding: 0rem;
     font-size: 0.875rem;
     font-family: "AvenirNextLTPro-Demi";
