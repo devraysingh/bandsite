@@ -42,7 +42,6 @@ li {
 
 .header {
   padding-top: 1rem;
-  border-bottom: 1px solid white;
   background-color: #323232;
 }
 @media screen and (min-width: 48rem) {
@@ -53,7 +52,7 @@ li {
 
 .nav {
   background-color: #323232;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 999;
@@ -65,13 +64,14 @@ li {
   }
 }
 .nav__logo {
-  height: 30px;
+  height: 1.875rem;
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 48rem) {
   .nav__logo {
-    max-height: 26px;
+    max-height: 1.625rem;
     align-items: center;
     margin: auto 1rem auto 2rem;
   }
@@ -98,7 +98,7 @@ li {
   display: inline-flex;
   width: 100%;
   height: 100%;
-  font-size: 16px;
+  font-size: 1rem;
   justify-content: center;
   align-items: center;
   color: white;
@@ -107,15 +107,18 @@ li {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.nav__list--nonactive:hover {
+  font-family: "AvenirNextLTPro";
+  border-bottom: 4px #FFFFFF solid;
+}
 .nav__list--active {
   font-family: "AvenirNextLTPro";
-  font-weight: bold;
   border-bottom: 4px #FFFFFF solid;
 }
 @media screen and (min-width: 48rem) {
   .nav__list {
     padding: 0rem;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: "AvenirNextLTPro-Demi";
     width: auto;
     display: flex;
@@ -125,7 +128,6 @@ li {
 .nav__link {
   color: white;
   text-decoration: none;
-  border-bottom: 1px solid whe;
 }
 
 .hero {
@@ -133,7 +135,7 @@ li {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 280px;
+  height: 17.5rem;
   width: 100%;
   display: flex;
   position: relative;
@@ -144,15 +146,17 @@ li {
   height: 100%;
   background-color: #323232;
   position: absolute;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 .hero__title {
   color: white;
   position: absolute;
   margin-left: 3rem;
+  margin-top: 3rem;
   font-size: 1.5rem;
   z-index: 1;
+  letter-spacing: 0.125;
 }
 @media screen and (min-width: 48rem) {
   .hero__title {
@@ -167,12 +171,12 @@ li {
 }
 @media screen and (min-width: 48rem) {
   .hero {
-    height: 530px;
+    height: 33.125rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .hero {
-    height: 630px;
+    height: 39.375rem;
   }
 }
 
@@ -214,6 +218,11 @@ li {
 @media screen and (min-width: 48rem) {
   .about__image {
     max-height: 38rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .about__image {
+    max-height: 48rem;
   }
 }
 .about__quote {
@@ -284,9 +293,12 @@ li {
 }
 @media screen and (min-width: 48rem) {
   .gallery__image {
-    width: 33%;
+    width: 33.3%;
     padding: 0.8rem 1rem 0.8rem 0rem;
   }
+}
+.gallery__image--cornor {
+  padding-right: 0;
 }
 .gallery__container {
   display: flex;
@@ -297,6 +309,7 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 1rem;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 80rem) {
@@ -356,11 +369,12 @@ li {
   .footer__contact {
     justify-content: start;
     width: 77%;
+    flex-grow: 2;
   }
 }
 .footer__container-contact {
   margin-top: 2rem;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
 }
 @media screen and (min-width: 48rem) {
@@ -387,7 +401,7 @@ li {
     order: 3;
     margin: 0rem 0rem;
     padding: 0rem 0rem;
-    max-height: 40px;
+    max-height: 2.5rem;
   }
 }
 .footer__copyright {
@@ -401,6 +415,8 @@ li {
 @media screen and (min-width: 80rem) {
   .footer__copyright {
     margin-top: 3rem;
+    display: block;
+    width: 100%;
   }
 }
 @media screen and (min-width: 48rem) {
