@@ -49,8 +49,11 @@ a {
 }
 
 .header {
-  padding-top: 1rem;
+  padding-top: 0.75rem;
   background-color: #323232;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 @media screen and (min-width: 48rem) {
   .header {
@@ -60,10 +63,7 @@ a {
 
 .nav {
   background-color: #323232;
-  position: sticky;
-  top: 0;
   width: 100%;
-  z-index: 999;
 }
 @media screen and (min-width: 48rem) {
   .nav {
@@ -73,8 +73,10 @@ a {
 }
 @media screen and (min-width: 80rem) {
   .nav {
-    display: flex;
     height: 6rem;
+    display: flex;
+    margin: 0 auto;
+    max-width: 63.75rem;
   }
 }
 .nav__logo {
@@ -87,12 +89,12 @@ a {
   .nav__logo {
     max-height: 1.625rem;
     align-items: center;
-    margin: auto 1rem auto 2.5rem;
+    margin: auto 1rem auto 2rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .nav__logo {
-    margin-left: 7.5rem;
+    margin-left: 0rem;
   }
 }
 .nav__lists {
@@ -110,23 +112,14 @@ a {
 }
 .nav__list {
   display: inline-flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
   font-size: 1rem;
-  justify-content: center;
-  align-items: center;
   color: white;
   font-weight: 700;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.nav__list--nonactive:hover {
-  font-family: "AvenirNext LT Pro";
-  border-bottom: 4px #FFFFFF solid;
-}
-.nav__list--active {
-  font-family: "AvenirNext LT Pro";
-  border-bottom: 4px #FFFFFF solid;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 48rem) {
   .nav__list {
@@ -140,64 +133,86 @@ a {
   }
 }
 .nav__link {
+  width: 100%;
   color: white;
   text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: center;
+}
+.nav__link--nonactive:hover {
+  font-family: "AvenirNext LT Pro";
+  border-bottom: 4px #FFFFFF solid;
+}
+.nav__link--active {
+  font-family: "AvenirNext LT Pro";
+  border-bottom: 4px #FFFFFF solid;
 }
 
 .hero {
-  background-image: url(../assets/images/hero-bio.jpg);
+  background-image: linear-gradient(to top, rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../assets/images/hero-bio.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 17.5rem;
-  width: 101.5%;
+  margin-top: 7rem;
   display: flex;
-  position: relative;
   align-items: center;
+  justify-content: center;
 }
-.hero__overlay {
-  width: 100%;
-  height: 100%;
-  background-color: #323232;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 0;
+@media screen and (min-width: 48rem) {
+  .hero {
+    justify-content: flex-start;
+    height: 29rem;
+    margin-top: 4.5rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .hero {
+    justify-content: flex-start;
+    height: 45.5rem;
+    margin-top: 6.01rem;
+  }
+}
+.hero__title-container {
+  display: flex;
+  margin: 0rem auto 0rem 1.6rem;
+}
+@media screen and (min-width: 48rem) {
+  .hero__title-container {
+    margin: 0rem auto 0rem 2.25rem;
+    justify-content: flex-start;
+    max-width: 63.75rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .hero__title-container {
+    width: 63.75rem;
+    margin: 0rem auto;
+  }
 }
 .hero__title {
   color: white;
-  position: absolute;
-  margin-left: 1.5rem;
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  z-index: 1;
-  letter-spacing: 0.125rem;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
   font-family: "AvenirNextLTPro-Demi";
 }
 @media screen and (min-width: 48rem) {
   .hero__title {
+    display: flex;
+    width: 100%;
     font-size: 3.4rem;
+    width: 100%;
     font-family: "AvenirNextLTPro-Demi";
-    margin-left: 3rem;
-    margin-top: 3rem;
-    letter-spacing: 0.25rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .hero__title {
     font-size: 4rem;
-    margin-left: 7.8rem;
-    margin-top: -3rem;
     letter-spacing: 0.1rem;
-  }
-}
-@media screen and (min-width: 48rem) {
-  .hero {
-    height: 29rem;
-  }
-}
-@media screen and (min-width: 80rem) {
-  .hero {
-    height: 45.5rem;
   }
 }
 
@@ -206,7 +221,6 @@ a {
 }
 @media screen and (min-width: 48rem) {
   .about {
-    width: 90%;
     display: flexbox;
     margin: auto;
   }
@@ -224,7 +238,7 @@ a {
 }
 @media screen and (min-width: 80rem) {
   .about__title-sec {
-    margin-left: 2.4rem;
+    margin-left: 0rem;
   }
 }
 .about__container-bio {
@@ -273,8 +287,8 @@ a {
 }
 @media screen and (min-width: 80rem) {
   .about__quote {
-    justify-content: flex-start;
-    width: 66%;
+    justify-content: center;
+    max-width: 63.75rem;
   }
 }
 .about__auth {
@@ -330,6 +344,17 @@ a {
     font-size: 1rem;
   }
 }
+@media screen and (min-width: 80rem) {
+  .about {
+    display: flex;
+    margin: 0 auto;
+    max-width: 63.75rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem;
+  }
+}
+
 .gallery {
   background-color: #FAFAFA;
   display: flex;
@@ -353,12 +378,12 @@ a {
 .gallery__image--cornor {
   padding-right: 0;
 }
-.gallery__container {
+.gallery__image-container {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 48rem) {
-  .gallery__container {
+  .gallery__image-container {
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 1rem;
@@ -366,8 +391,13 @@ a {
   }
 }
 @media screen and (min-width: 80rem) {
-  .gallery {
-    padding: 3rem 7rem 1rem 7rem;
+  .gallery__container {
+    display: flex;
+    max-width: 63.75rem;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0rem;
   }
 }
 
@@ -481,16 +511,24 @@ a {
     width: 100%;
   }
 }
+.footer__container {
+  background-color: #323232;
+  color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
 @media screen and (min-width: 48rem) {
-  .footer {
-    padding: 3rem 2.2rem 2.4rem 2.2rem;
+  .footer__container {
+    padding: 0rem;
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
   }
 }
 @media screen and (min-width: 80rem) {
-  .footer {
-    padding: 3rem 7.1rem 3rem 7.2rem;
+  .footer__container {
+    max-width: 63.75rem;
+    justify-content: center;
   }
 }/*# sourceMappingURL=bio.css.map */

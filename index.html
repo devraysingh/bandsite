@@ -14,19 +14,22 @@
         <nav class="nav">
             <a class="nav__logo" href="./index.html"><img class="nav__img-logo" src="./assets/logos/Logo-bandsite.svg" alt="bandsite logo"></a>
             <ul class="nav__lists">
-                <li class="nav__list nav__list--active "><a class="nav__link " href="./index.html">Biography</a></li>
-                <li class="nav__list nav__list--nonactive"><a class="nav__link" href="#">Shows</a></li>
+                <li class="nav__list nav__list"><a class="nav__link nav__link--active" href="./index.html"><span class="nav__text">Biography</span></a></li>
+                <li class="nav__list nav__list"><a class="nav__link nav__link--nonactive" href="#"><span class="nav__text">Shows</span></a></li>
             </ul>
         </nav>
     </header>
+
+    
 
     <!-- Main Section -->
     <main>
 
         <!-- Hero Section -->
         <section class="hero">
-            <div class="hero__overlay"></div>
-            <h1 class="hero__title">The Bees Knees</h1>
+            <div class="hero__title-container">
+                <h1 class="hero__title">The Bees Knees</h1>
+            </div>
         </section>
 
         <!--About Section -->
@@ -67,77 +70,81 @@
 
         <!-- Gallery Section -->
         <section class="gallery">
-            <h2  class="gallery__title" >Photo Gallery</h2> 
             <div class="gallery__container">
-                <img class="gallery__image" src="assets/images/Photo-gallery-1.jpg" alt="rainbow smoke">
-                <img class="gallery__image" src="assets/images/Photo-gallery-2.jpg" alt="girl at concert">
-                <img class="gallery__image gallery__image--cornor" src="assets/images/Photo-gallery-3.jpg" alt="red smoke hands waving">
-                <img class="gallery__image" src="assets/images/Photo-gallery-4.jpg" alt="girl in blue strobe lights">
-                <img class="gallery__image" src="assets/images/Photo-gallery-5.jpg" alt="hands waving at concert">
-                <img class="gallery__image gallery__image--cornor"  src="assets/images/Photo-gallery-6.jpg" alt="singer performing">
-                <img class="gallery__image" src="assets/images/Photo-gallery-7.jpg" alt="rainbow light show concert">
-                <img class="gallery__image" src="assets/images/Photo-gallery-8.jpg" alt="dj set at concert">
-                <img class="gallery__image gallery__image--cornor" src="assets/images/Photo-gallery-9.jpg" alt="confetti falling">
+                <h2  class="gallery__title" >Photo Gallery</h2> 
+                <div class="gallery__image-container">
+                    <img class="gallery__image" src="assets/images/Photo-gallery-1.jpg" alt="rainbow smoke">
+                    <img class="gallery__image" src="assets/images/Photo-gallery-2.jpg" alt="girl at concert">
+                    <img class="gallery__image gallery__image--cornor" src="assets/images/Photo-gallery-3.jpg" alt="red smoke hands waving">
+                    <img class="gallery__image" src="assets/images/Photo-gallery-4.jpg" alt="girl in blue strobe lights">
+                    <img class="gallery__image" src="assets/images/Photo-gallery-5.jpg" alt="hands waving at concert">
+                    <img class="gallery__image gallery__image--cornor"  src="assets/images/Photo-gallery-6.jpg" alt="singer performing">
+                    <img class="gallery__image" src="assets/images/Photo-gallery-7.jpg" alt="rainbow light show concert">
+                    <img class="gallery__image" src="assets/images/Photo-gallery-8.jpg" alt="dj set at concert">
+                    <img class="gallery__image gallery__image--cornor" src="assets/images/Photo-gallery-9.jpg" alt="confetti falling">
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer Section -->
     <footer class="footer">
-        <h2 class="footer__title">Get in Touch</h2>
-        <div class="footer__social">
-            <a href="https://instagram.com/" target="_blank" class="footer__social-link">
-                <img class="footer__image" src="./assets/icons/Icon-instagram.svg" alt="instagram icon"></a>
-            <a href="https://facebook.com/" target="_blank" class="footer__social-link">
-                <img class="footer__image" src="./assets/icons/Icon-facebook.svg" alt="facebook icon">
-            </a>
-             <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                <img class="footer__image" src="./assets/icons/Icon-twitter.svg" alt="twitter icon">
-             </a>
+       <div class="footer__container">
+            <h2 class="footer__title">Get in Touch</h2>
+            <div class="footer__social">
+                <a href="https://instagram.com/" target="_blank" class="footer__social-link">
+                    <img class="footer__image" src="./assets/icons/Icon-instagram.svg" alt="instagram icon"></a>
+                <a href="https://facebook.com/" target="_blank" class="footer__social-link">
+                    <img class="footer__image" src="./assets/icons/Icon-facebook.svg" alt="facebook icon">
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                    <img class="footer__image" src="./assets/icons/Icon-twitter.svg" alt="twitter icon">
+                </a>
+            </div>
+            <br>
+            <div class="footer__contact">
+                <div class="footer__container-contact">
+                    <h4 class="footer__contact-title">
+                        Cam Adams <br>
+            
+                        The Bees Knees Management
+                    </h4>
+                    <br>
+                    <p>503 Broadway Penthouse, <br>
+                        New York, NY 10012, USA
+                    </p> 
+                    <br>
+                    <a class="footer__email" href="mailto:info@thebeesknees.com " target="_blank">info@thebeesknees.com</a>
+                </div>
+                <div class="footer__container-contact">
+                    <h4 class="footer__contact-title">
+                        Pearl Gregg <br>
+                        Limitless Artist Group
+                    </h4>
+                    <br>
+                    <p>Booking Agent for <br>
+                        US / South America / Japan
+                    </p>
+                    <br>
+                    <a class="footer__email" href="mailto:pearl.gregg@limitlessag.com" target="_blank">pearl.gregg@limitlessag.com</a>
+                </div>
+                <div class="footer__container-contact">
+                    <h4 class="footer__contact-title">
+                        Carson Whyte <br>
+                        ARCH Entertainment
+                    </h4>
+                    <br>
+                    <p>Booking Agent for <br>
+                        UK / EU / AU
+                    </p>
+                    <br>
+                    <p><a class="footer__email" href="mailto:cwhyte@archentertainment.com" target="_blank">cwhyte@archentertainment.com</a>
+                    </p>
+                </div>
+            </div>
+            <img class="footer__image-logo" src="assets/logos/Logo-bandsite.svg" alt="bandsite logo">
+            <p class="footer__copyright">Copyright The Bees Knees © 2021 All Rights Reserved</p>
         </div>
-        <br>
-        <div class="footer__contact">
-            <div class="footer__container-contact">
-                <h4 class="footer__contact-title">
-                    Cam Adams <br>
-        
-                    The Bees Knees Management
-                </h4>
-                <br>
-                <p>503 Broadway Penthouse, <br>
-                    New York, NY 10012, USA
-                </p> 
-                <br>
-                <a class="footer__email" href="mailto:info@thebeesknees.com " target="_blank">info@thebeesknees.com</a>
-            </div>
-            <div class="footer__container-contact">
-                <h4 class="footer__contact-title">
-                    Pearl Gregg <br>
-                    Limitless Artist Group
-                </h4>
-                <br>
-                <p>Booking Agent for <br>
-                     US / South America / Japan
-                </p>
-                <br>
-                <a class="footer__email" href="mailto:pearl.gregg@limitlessag.com" target="_blank">pearl.gregg@limitlessag.com</a>
-            </div>
-            <div class="footer__container-contact">
-                <h4 class="footer__contact-title">
-                    Carson Whyte <br>
-                    ARCH Entertainment
-                </h4>
-                <br>
-                <p>Booking Agent for <br>
-                    UK / EU / AU
-                </p>
-                <br>
-                <p><a class="footer__email" href="mailto:cwhyte@archentertainment.com" target="_blank">cwhyte@archentertainment.com</a>
-                </p>
-            </div>
-        </div>
-        <img class="footer__image-logo" src="assets/logos/Logo-bandsite.svg" alt="bandsite logo">
-        <p class="footer__copyright">Copyright The Bees Knees © 2021 All Rights Reserved</p>
     </footer>
     <!-- The End -->
 </body>

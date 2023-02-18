@@ -42,8 +42,13 @@ a {
 
 // Header Section SASS
 .header {
-    padding-top: 1rem;
+    padding-top: 0.75rem;
     background-color: $primary-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+
 
 
     @include tablet {
@@ -54,12 +59,12 @@ a {
 
 }
 // Nav Section Sass
+
+
 .nav {
+
     background-color: $primary-color;
-    position: sticky;
-    top: 0;
     width: 100%;
-    z-index: 999;
 
 
     @include tablet {
@@ -67,27 +72,29 @@ a {
         height: 4.5rem;
     }
     @include desktop {
-        display: flex;
         height: 6rem;
+        display: flex;
+        margin: 0 auto;
+        max-width: 63.75rem;
     }
 
     &__logo {
         height: 1.875rem;  
         display: flex;
         justify-content: center;
-            margin-top: 1rem;
+        margin-top: 1rem;
 
         @include tablet {
          
             max-height: 1.625rem;
             align-items: center;
-            margin: auto 1rem auto 2.5rem;
+            margin: auto 1rem auto 2rem;
 
 
         }
 
         @include desktop {
-            margin-left: 7.5rem;
+            margin-left: 0rem;
         }
     }
 
@@ -108,24 +115,16 @@ a {
 
     &__list{
         display: inline-flex;
+        flex-direction: row;
         width: 100%;
         height: 100%;
         font-size: 1rem;
-        justify-content: center;
-        align-items: center;
         color: white;
         font-weight: 700;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        &--nonactive:hover{
-            font-family: $body-font;
-            border-bottom: 4px $white-color solid;
-        }
 
-        &--active{
-            font-family: $body-font;
-            border-bottom: 4px $white-color solid;
-        }
+        align-items: center;
+        justify-content: center;
+
     
         @include tablet {
             padding: 0rem;
@@ -139,65 +138,99 @@ a {
     }
 
     &__link {
+        width: 100%;
         color: white;
         text-decoration: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        justify-content: center;
+       
+        &--nonactive:hover{
+            font-family: $body-font;
+            border-bottom: 4px $white-color solid;
+        }
+
+        &--active{
+            font-family: $body-font;
+            border-bottom: 4px $white-color solid;
+        }
     }
+
+
+
 }
 // Hero Section SASS
 .hero {
-
-    background-image: url(../assets/images/hero-bio.jpg);
+    
+    background-image: linear-gradient(to top, rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../assets/images/hero-bio.jpg);
     background-size: cover;
     background-position: center ; 
     background-repeat: no-repeat;
     height: 17.5rem;
-    width: 101.5%;
+    margin-top: 7rem;
     display: flex;
-    position: relative;
     align-items: center;
-
-    &__overlay{
-        width: 100%;
-        height: 100%;
-        background-color: $primary-color;
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 0;
-    }
-    &__title {
-        color: white;
-        position: absolute;
-        margin-left: 1.5rem;
-        margin-top: 1rem;
-        font-size: 1.5rem;
-        z-index: 1;
-        letter-spacing: 0.125rem;
-        font-family: $subheader-font;
-
-        @include tablet {
-            font-size: 3.4rem;
-            font-family: $subheader-font;
-            margin-left: 3rem;
-            margin-top: 3rem;
-            letter-spacing: 0.25rem;
-        }
-        @include desktop {
-            font-size: 4rem;
-            margin-left: 7.8rem;
-            margin-top: -3rem;
-            letter-spacing: 0.1rem;
-        }
-    }
+    justify-content: center;
+  
 
     @include tablet{
+        justify-content: flex-start;
         height: 29rem;
+        margin-top: 4.5rem;
     }
 
 
     @include desktop{
+        justify-content: flex-start;
         height: 45.5rem;
+        margin-top: 6.01rem;
     }
 
+    &__title-container{
+        display: flex;
+        margin: 0rem  auto 0rem  1.6rem;
+
+        @include tablet{
+            margin: 0rem  auto 0rem  2.25rem;
+            justify-content: flex-start;
+            max-width: 63.75rem;
+           
+            
+
+        }
+        @include desktop{
+            width: 63.75rem;
+            margin: 0rem auto;
+            
+        }
+    
+
+    }
+
+    &__title {
+        color: white;
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        font-family: $subheader-font;
+
+        @include tablet {
+            display: flex;
+            width: 100%;
+            font-size: 3.4rem;
+            width: 100%;
+            font-family: $subheader-font;
+
+        }
+        @include desktop {
+            font-size: 4rem;
+            letter-spacing: 0.1rem;
+
+
+        }
+    }
 
 
 }
@@ -207,7 +240,6 @@ a {
     padding: 1rem;
 
     @include tablet{
-        width: 90%;
         display: flexbox;
         margin: auto;
 
@@ -226,7 +258,8 @@ a {
         }
 
         @include desktop{
-            margin-left: 2.4rem;
+            margin-left: 0rem;
+       
      
         }
         
@@ -275,9 +308,10 @@ a {
      
         }
         @include desktop{
-            justify-content: flex-start;
-            width: 66%;
-     
+            justify-content: center;
+            max-width: 63.75rem;
+
+    
         }
 
     }
@@ -348,6 +382,12 @@ a {
     }
 
     @include desktop{
+        display: flex;
+        margin: 0 auto;
+        max-width: 63.75rem;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem;
 
     }
 
@@ -380,7 +420,7 @@ a {
 
         
     }
-    &__container {
+    &__image-container {
         display: flex;
         flex-direction: column;
         @include tablet {
@@ -392,12 +432,21 @@ a {
         }
         
     }
-    @include desktop{
-        padding: 3rem 7rem 1rem 7rem;
+    &__container {
+        @include desktop{
+            display: flex;
+            max-width: 63.75rem;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 0rem;
+        }
+
     }
+
 }
 // Footer Section SASS
-.footer {
+.footer{
     padding:2.4rem 1.6rem;
     background-color: $primary-color;
     color: #FAFAFA;
@@ -515,18 +564,26 @@ a {
             width: 100%;
         }
     }
-
+    &__container {
+        background-color: $primary-color;
+        color: #FAFAFA;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    
     @include tablet {
-        padding:3rem 2.2rem 2.4rem 2.2rem;
+        padding: 0rem ;
         flex-wrap: wrap;
         flex-direction: row;
         position: relative;
     }
 
     @include desktop{
-        padding:3rem 7.1rem 3rem 7.2rem;
-    }
+        max-width: 63.75rem;
+        justify-content: center;
 
+    }
+}
 
 
 }
