@@ -551,7 +551,7 @@ a {
 @media screen and (min-width: 80rem) {
   .conv {
     max-width: 63.75;
-    width: 70%;
+    width: 78%;
   }
 }
 .conv__section-title {
@@ -723,7 +723,7 @@ a {
 }
 @media screen and (min-width: 80rem) {
   .comments__new-sec {
-    width: 70%;
+    width: 78%;
   }
 }
 @media screen and (min-width: 80rem) {
