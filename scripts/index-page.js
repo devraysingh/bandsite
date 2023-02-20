@@ -30,7 +30,9 @@
     function displayComment() {
 
         commentsSection.innerHTML = "";
-
+        let newSec = document.createElement('hr');
+        commentsSection.appendChild(newSec);
+        newSec.classList.add("comments__new-sec");
         comments.forEach((comment) => {
 
             const commentContainer = document.createElement("div");
@@ -42,7 +44,7 @@
             const date = document.createElement("p");
             const commentDes = document.createElement("div");
             const userComment = document.createElement("div");
-            const newSec = document.createElement('hr');
+            newSec = document.createElement('hr');
 
             name.innerText = comment.name;
             date.innerText = comment.date;

@@ -545,15 +545,28 @@ a {
 }
 @media screen and (min-width: 48rem) {
   .conv {
+    max-width: 63.75;
     display: flex;
     justify-content: center;
     margin: 1rem auto;
-    width: 85%;
+    width: 80%;
   }
 }
 @media screen and (min-width: 80rem) {
   .conv {
-    width: 50%;
+    max-width: 63.75;
+    width: 70%;
+  }
+}
+.conv__section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "AvenirNextLTPro-Demi";
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 48rem) {
+  .conv__section-title {
+    font-size: 2.25rem;
   }
 }
 .conv__form {
@@ -566,6 +579,19 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.conv__email-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.conv__name-label {
+  color: #AFAFAF;
+  margin-bottom: 1rem;
+}
+.conv__comment-label {
+  color: #AFAFAF;
+  margin-bottom: 1rem;
 }
 .conv__name-input {
   font-size: 1rem;
@@ -586,17 +612,40 @@ a {
   height: 8rem;
   padding-bottom: 4rem;
   padding-left: 1rem;
-  margin-bottom: 1.5rem;
+  margin: 1rem 0rem;
 }
 .conv__btn {
   width: 100%;
-  height: 5.6rem;
+  height: 4.6rem;
   background-color: #323232;
   color: #FFF;
-  font-size: 1.6rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
   border-radius: 5px;
   border: none;
   margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 48rem) {
+  .conv__btn {
+    width: 33%;
+    height: 3.2rem;
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .conv__btn {
+    width: 44%;
+  }
+}
+.conv__btn-cont {
+  display: flex;
+}
+@media screen and (min-width: 48rem) {
+  .conv__btn-cont {
+    height: 3.6rem;
+    width: 100%;
+    justify-content: flex-end;
+  }
 }
 .conv__profile {
   display: flex;
@@ -605,6 +654,7 @@ a {
 }
 .conv__profile-img {
   margin-top: 1.3rem;
+  margin-right: 1.4rem;
   width: 2.75em;
   height: 2.75rem;
   -o-object-fit: cover;
@@ -649,27 +699,35 @@ a {
   margin-right: 1.5rem;
   margin-top: 0.5rem;
 }
+.comments__comment-cont {
+  margin: 1rem auto;
+}
 @media screen and (min-width: 48rem) {
   .comments__comment-cont {
-    width: 75%;
+    width: 80%;
+    max-width: 48rem;
     display: flex;
     justify-content: center;
-    margin: 1rem auto;
   }
+}
+.comments__name {
+  font-family: "AvenirNextLTPro-Demi";
+  margin-bottom: 1rem;
+}
+.comments__date {
+  color: #AFAFAF;
 }
 @media screen and (min-width: 48rem) {
   .comments__new-sec {
     display: flex;
     justify-content: center;
     margin: 1rem auto;
+    width: 80%;
   }
 }
 @media screen and (min-width: 80rem) {
   .comments__new-sec {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    margin: 1rem auto;
+    width: 70%;
   }
 }
 @media screen and (min-width: 80rem) {

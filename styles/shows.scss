@@ -14,8 +14,7 @@
     padding: 1.6rem;
 
     @include tablet {
-        flex-direction: row;
-        justify-content: space-evenly;
+
         height: 29rem;
         margin-top: 3.28rem;
 
@@ -49,7 +48,10 @@
         &__container{
         
             @include tablet{
-                width: 40%;
+                width: 65%;
+            }
+            @include desktop{
+                width: 40%
             }
        
         }
@@ -77,11 +79,12 @@
 
         @include tablet {
 
+           
+
+        @include desktop {
             flex-direction: row;
             justify-content: space-evenly;
         }
-
-        @include desktop {
 
         }
     }
@@ -91,9 +94,10 @@
 .shows {
     padding: 1rem;
     @include tablet {
-        
+        padding: 0rem 3rem;
     }
     @include desktop{
+        padding: 0rem;
         @include desktop-size;
         margin-top: 3rem;
         display: flex;
@@ -111,6 +115,11 @@
         font-size: 1.5rem;
         border-radius: 0.5rem;
         margin-bottom: 1.5rem;
+
+        &:hover{
+            background-color: black;
+
+        }
         @include tablet {
             margin-bottom: 0rem;
             width: 11.75rem;

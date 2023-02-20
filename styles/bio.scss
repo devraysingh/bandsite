@@ -287,17 +287,29 @@
     justify-content: space-between;
 
     @include tablet {
+        max-width: 63.75;
         display: flex;
         justify-content: center;
         margin: 1rem auto;
-        width: 85%;
+        width: 80%;
 
     }
     @include desktop {
-        width: 50%;
+        max-width: 63.75;
+        width: 70%;
 
     }    
      
+    &__section-title{
+        font-size: 2.0rem;
+        font-weight: 600;
+        font-family: $subheader-font;
+        margin-bottom: 2rem;
+        @include tablet {
+            font-size: 2.25rem;
+  
+        }
+    }
  
 
     &__form {
@@ -306,8 +318,7 @@
         justify-content: center;
         width: 85%;
         @include tablet {
-
-
+     
         }
         @include desktop{
       
@@ -320,6 +331,23 @@
         flex-direction: column;
         justify-content: center;
    
+    }
+    &__email-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+   
+    }
+
+    &__name-label{
+        color: #AFAFAF;
+        margin-bottom: 1rem;
+    }
+
+    &__comment-label{
+        color: #AFAFAF;
+        margin-bottom: 1rem;
+
     }
 
     &__name-input{
@@ -342,18 +370,39 @@
         height: 8rem;
         padding-bottom: 4rem;
         padding-left: 1rem;
-        margin-bottom: 1.5rem;
+        margin: 1rem 0rem;
 
     }
     &__btn{
         width: 100%;
-        height: 5.6rem;
+        height: 4.6rem;
         background-color: #323232;
         color: #FFF;
-        font-size: 1.6rem;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
         border-radius: 5px;
         border: none;
         margin-bottom: 1.5rem;
+        @include tablet {
+            width: 33%;
+            height: 3.2rem;
+            padding: 0 1rem;
+        }
+        @include desktop {
+            width: 44%;
+        }
+   
+    }
+
+    &__btn-cont{
+        display: flex;
+        @include tablet {
+            height: 3.6rem;
+            width: 100%;
+            justify-content: flex-end;
+            
+        }
+
     }
 
     &__profile{
@@ -367,12 +416,15 @@
 
     &__profile-img{
         margin-top: 1.3rem;
+        margin-right: 1.4rem;
         width: 2.75em;
         height: 2.75rem;
         object-fit: cover;
         border-radius: 1.3rem;
         
     }
+
+ 
 
     &__section{
 
@@ -389,6 +441,8 @@
 
 .comments{
     padding: 1rem 1.6rem 0rem 1.6rem;
+
+
 
     &__user-cont{
         width: 85%;
@@ -415,28 +469,41 @@
     }
 
     &__comment-cont {
+        margin: 1rem auto;
         @include tablet {
-            width: 75%;
+            width: 80%;
+            max-width: 48rem;
             display: flex;
             justify-content: center;
-            margin: 1rem auto;
+           
         }    
     }
+    &__name{
+        font-family: $subheader-font;
+        margin-bottom: 1rem;
+
+    }
+
+    &__date {
+        color: #AFAFAF;
+    }
+
 
     &__new-sec {
         @include tablet {
             display: flex;
             justify-content: center;
             margin: 1rem auto;
+            width: 80%;
     
     
         }
         @include desktop {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            margin: 1rem auto;
+            width: 70%;
         }    
+
+    }
+    @include tablet {
 
     }
 
@@ -444,6 +511,7 @@
 
     @include desktop {
         @include desktop-size;
+        
     }
 
     

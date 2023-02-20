@@ -305,8 +305,6 @@ a {
 }
 @media screen and (min-width: 48rem) {
   .hero {
-    flex-direction: row;
-    justify-content: space-evenly;
     height: 29rem;
     margin-top: 3.28rem;
   }
@@ -339,6 +337,11 @@ a {
 }
 @media screen and (min-width: 48rem) {
   .hero__title__container {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .hero__title__container {
     width: 40%;
   }
 }
@@ -360,17 +363,24 @@ a {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48rem) and (min-width: 80rem) {
   .hero__container {
     flex-direction: row;
     justify-content: space-evenly;
   }
 }
+
 .shows {
   padding: 1rem;
 }
+@media screen and (min-width: 48rem) {
+  .shows {
+    padding: 0rem 3rem;
+  }
+}
 @media screen and (min-width: 80rem) {
   .shows {
+    padding: 0rem;
     display: flex;
     max-width: 63.75rem;
     flex-direction: column;
@@ -391,6 +401,9 @@ a {
   font-size: 1.5rem;
   border-radius: 0.5rem;
   margin-bottom: 1.5rem;
+}
+.shows__btn:hover {
+  background-color: black;
 }
 @media screen and (min-width: 48rem) {
   .shows__btn {
