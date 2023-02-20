@@ -712,13 +712,16 @@ a {
 .comments__date {
   color: #AFAFAF;
 }
+.comments__new-sec {
+  opacity: 0.5;
+}
 @media screen and (min-width: 48rem) {
   .comments__new-sec {
     display: flex;
     justify-content: center;
     margin: 1rem auto;
     width: 80%;
-    opacity: 0.5;
+    max-width: 48rem;
   }
 }
 @media screen and (min-width: 80rem) {
