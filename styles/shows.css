@@ -159,11 +159,7 @@ a {
   display: flex;
   flex-direction: column;
   margin: auto;
-}
-@media screen and (min-width: 48rem) {
-  .footer {
-    margin-top: 2rem;
-  }
+  margin-top: 2rem;
 }
 .footer__title {
   margin-bottom: 0;

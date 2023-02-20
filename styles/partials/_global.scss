@@ -151,11 +151,9 @@ a {
     display: flex;
     flex-direction: column;
     margin: auto;
+    margin-top: 2rem;
 
-    @include tablet{
-        margin-top: 2rem;
-    }
-
+ 
 
 
     &__title {
