@@ -1,0 +1,287 @@
+@use './mixins' as *;
+@use './fonts' as *;
+@use './variables' as *;
+
+
+//Boilder Plate Setup
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+  
+}
+
+h1, h2, h3, h4 {
+    font-family: $subheader-font;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $body-font;
+    color:  $primary-color;
+  }
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+    
+}
+
+li {
+    list-style: none;
+   
+}
+
+a {
+    margin: 0rem 0rem;
+}
+
+// Header Section SASS
+.header {
+    padding-top: 0.75rem;
+    background-color: $primary-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    @include tablet {
+        padding-top: 0rem;
+    }
+}
+
+// Nav Section Sass
+.nav {
+
+    background-color: $primary-color;
+    width: 100%;
+
+
+    @include tablet {
+        display: flex;
+        height: 4.5rem;
+    }
+    @include desktop {
+        height: 6rem;
+        display: flex;
+        margin: 0 auto;
+        max-width: 63.75rem;
+    }
+
+    &__logo {
+        height: 1.875rem;  
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+        @include tablet {
+            max-height: 1.625rem;
+            align-items: center;
+            margin: auto 1rem auto 2rem;
+        }
+
+        @include desktop {
+            margin-left: 0rem;
+        }
+    }
+
+    &__lists{
+        display: flex;
+        width: 100%;
+        margin-block-start: 0;
+        justify-content: center;
+
+        @include tablet{
+            width: 30%;  
+            justify-content: start;
+        }
+    }
+
+    &__list{
+        display: inline-flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+        color: white;
+        font-weight: 700;
+        align-items: center;
+        justify-content: center;
+
+        @include tablet {
+            padding: 0rem;
+            font-size: 0.875rem;
+            font-family: $subheader-font;
+            width: auto;
+            display: flex;
+            justify-content: baseline;
+            margin: auto 2rem auto 2rem;
+        }
+    }
+
+    &__link {
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        justify-content: center;
+       
+        &--nonactive:hover{
+            font-family: $body-font;
+            border-bottom: 4px $white-color solid;
+        }
+
+        &--active{
+            font-family: $body-font;
+            border-bottom: 4px $white-color solid;
+        }
+    }
+}
+
+// Footer Section SASS
+.footer{
+    padding:2.4rem 1.6rem;
+    background-color: $primary-color;
+    color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+
+
+    &__title {
+        
+        margin-bottom: 0;
+        padding-bottom: 0;
+        order: 1;
+        font-size: 2.25rem;
+
+        font-weight: 500;
+        
+    }
+
+    &__social{
+        order: 2;
+        display: flex;
+        align-items: center;
+       
+        
+        @include tablet{
+            flex-grow: 1;
+            margin-left: 2rem;
+        }
+        @include desktop {
+            margin-left: 3rem;
+        }
+    }
+
+    &__image {
+  
+        padding: 1rem 1rem 0rem 0rem;
+
+        @include tablet{
+            padding: 0.7rem 1rem 0rem 0rem;
+        }
+        @include desktop {
+            padding: 0.7rem 2rem 0rem 0rem;
+        }
+      
+    }
+
+
+
+    &__contact{
+        order: 3;
+        @include tablet {
+            order: 4;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+
+        }
+
+        @include desktop {
+            justify-content: start;
+            width: 77%;
+            flex-grow: 2;
+    
+        }
+    }
+
+    &__container-contact{
+        margin-top: 2rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        @include tablet {
+            width: 33%;
+        }
+    }
+
+    &__email{
+        color: white;
+        text-decoration: none;
+    }
+
+
+     &__contact-title{
+        font-family: $subheader-font;
+     }
+
+
+    &__image-logo{
+        order: 4;
+        width: 12.5rem;
+        margin-top: 3.5rem;
+        margin-bottom: 1.5rem;
+        
+        @include tablet {
+            width: 8.5rem;
+            order: 3;
+            margin: 0rem 0rem;
+            padding: 0rem 0rem;
+            max-height: 2.5rem;
+            
+            
+        }
+    }
+
+    &__copyright {
+        order: 5;
+        @include tablet{
+            margin-top: 2.4rem;
+        }
+        @include desktop{
+            margin-top: 3rem;
+            display: block;
+            width: 100%;
+        }
+    }
+    &__container {
+        background-color: $primary-color;
+        color: #FAFAFA;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    
+    @include tablet {
+        padding: 0rem ;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+    }
+
+    @include desktop{
+        max-width: 63.75rem;
+        justify-content: center;
+
+    }
+}
+
+
+}

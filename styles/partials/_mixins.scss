@@ -12,3 +12,29 @@
         @content;
     }
 };
+
+@mixin hero ($url) {
+
+    background-image: linear-gradient(to top, rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url($url);
+    background-size: cover;
+    background-position: center ; 
+    background-repeat: no-repeat;
+    height: 17.5rem;
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+//../assets/images/hero-bio.jpg
+
+
+@mixin desktop-size {
+    display: flex;
+    max-width: 63.75rem;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0rem;
+}

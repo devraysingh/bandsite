@@ -1,0 +1,192 @@
+//Importing Dependices
+@use './partials/mixins' as *;
+@use './partials/fonts' as *;
+@use './partials/variables' as *;
+@use './partials/global' as *;
+
+
+
+.hero {
+    @include hero("../assets/images/hero-shows.jpg");
+
+    margin-top: 5.9rem;
+    height: 30rem;
+    padding: 1.6rem;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 29rem;
+        margin-top: 3.28rem;
+
+    }
+
+    @include desktop {
+        display: flex;
+        height: 45.5rem;
+        margin-top: 4.78rem;
+        margin: 0 auto;
+        justify-content: center;
+        
+    }
+
+    &__sub-title{
+        color: white;
+        font-family: $body-font;
+        font-weight: 400;
+    
+    }
+
+    &__title{
+        color: white;
+        font-family: $subheader-font;
+        font-size: 2.7rem;
+        margin-bottom: 2rem;
+
+    }
+    &__song{
+        padding: 1rem;
+        width: 100%;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        @include desktop {
+
+        }
+    }
+
+}
+
+.shows {
+    padding: 1rem;
+    @include tablet {
+        
+    }
+    @include desktop{
+        @include desktop-size;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+
+    }
+    &__btn {
+        width: 100%;
+        padding: 1rem;
+        color: #FFFFFF;
+        background-color: #323232;
+  
+        font-size: 1.5rem;
+        border-radius: 0.5rem;
+        margin-bottom: 1.5rem;
+        @include tablet {
+            width: 11.75rem;
+            font-size: 1rem;
+            padding: 1rem 1.2rem;
+        }
+      
+    }
+    &__title-container {
+        margin-bottom: 2rem;
+    }
+    &__title{
+        margin: 2rem 0rem 0rem 0rem;
+        font-family: $subheader-font;
+        font-size: 2.2rem;
+        color: black;
+    }
+    &__label{
+        margin-top: 1.3rem;
+        margin-bottom: 1rem;
+        color: #AFAFAF;
+        @include tablet{
+            display: none;
+        }
+        
+    }
+
+    &__date{
+        font-family: $subheader-font;
+        margin-bottom: 1rem;
+        font-size: 1.25rem; 
+        @include tablet{
+            max-width: 11.75rem;
+        }
+    }
+
+    &__loc{
+        font-size: 1.25rem; 
+        margin-bottom: 1rem;
+        @include tablet{
+            max-width: 11.75rem;
+        }
+    }
+
+    &__venue{
+        font-size: 1.25rem; 
+        margin-bottom: 1rem;
+        @include tablet{
+            max-width: 11.75rem;
+        }
+    }
+
+    &__new-sec{
+        margin-bottom: 1.2rem;
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+
+        }
+
+    }
+
+
+    &__card{
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+
+        }
+
+    }
+
+    &__title--show{
+        display: none;
+        @include tablet{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            color: #AFAFAF;
+            width: 95.5%;
+
+            
+
+        }
+    }
+
+    &__loc--space{
+        visibility: hidden;
+        width: 12%;
+    }
+
+    &__schedule{
+        @include desktop{
+            width: 70%;
+
+        }
+    }
+
+}

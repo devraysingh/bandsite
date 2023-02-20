@@ -285,7 +285,7 @@ a {
 }
 
 .hero {
-  background-image: linear-gradient(to top, rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/hero-bio.jpg");
+  background-image: linear-gradient(to top, rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/hero-shows.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -294,386 +294,167 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5.9rem;
+  height: 30rem;
+  padding: 1.6rem;
 }
 @media screen and (min-width: 48rem) {
   .hero {
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-evenly;
     height: 29rem;
-    margin-top: 4.5rem;
+    margin-top: 3.28rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .hero {
-    justify-content: flex-start;
+    display: flex;
     height: 45.5rem;
-    margin-top: 6.01rem;
+    margin-top: 4.78rem;
+    margin: 0 auto;
+    justify-content: center;
   }
 }
-.hero__title-container {
-  display: flex;
-  margin: 0rem auto 0rem 1.6rem;
-}
-@media screen and (min-width: 48rem) {
-  .hero__title-container {
-    margin: 0rem auto 0rem 2.25rem;
-    justify-content: flex-start;
-    max-width: 63.75rem;
-  }
-}
-@media screen and (min-width: 80rem) {
-  .hero__title-container {
-    width: 63.75rem;
-    margin: 0rem auto;
-  }
+.hero__sub-title {
+  color: white;
+  font-family: "AvenirNext LT Pro";
+  font-weight: 400;
 }
 .hero__title {
   color: white;
-  font-size: 2rem;
-  letter-spacing: 0.1rem;
   font-family: "AvenirNextLTPro-Demi";
+  font-size: 2.7rem;
+  margin-bottom: 2rem;
+}
+.hero__song {
+  padding: 1rem;
+  width: 100%;
+}
+.hero__container {
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 48rem) {
-  .hero__title {
+  .hero__container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.shows {
+  padding: 1rem;
+}
+@media screen and (min-width: 80rem) {
+  .shows {
     display: flex;
-    width: 100%;
-    font-size: 3.4rem;
-    width: 100%;
-    font-family: "AvenirNextLTPro-Demi";
-  }
-}
-@media screen and (min-width: 80rem) {
-  .hero__title {
-    font-size: 4rem;
-    letter-spacing: 0.1rem;
-  }
-}
-
-.about {
-  padding: 1rem;
-}
-@media screen and (min-width: 48rem) {
-  .about {
-    display: flexbox;
-    margin: auto;
-  }
-}
-.about__title-sec {
-  font-weight: 600;
-  font-family: "AvenirNextLTPro-Demi";
-  font-size: 2.25rem;
-  margin: 2.75rem 1rem 1rem 1rem;
-}
-@media screen and (min-width: 48rem) {
-  .about__title-sec {
-    font-size: 2.2rem;
-  }
-}
-@media screen and (min-width: 80rem) {
-  .about__title-sec {
-    margin-left: 0rem;
-  }
-}
-.about__container-bio {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  padding: 1rem;
-  margin: auto;
-}
-@media screen and (min-width: 80rem) {
-  .about__container-bio {
-    padding: 1rem 4rem 1rem 4rem;
-  }
-}
-.about__image {
-  -o-object-fit: cover;
-     object-fit: cover;
-  aspect-ratio: 16/9;
-  width: 100%;
-  -o-object-position: bottom;
-     object-position: bottom;
-  width: 100%;
-  max-height: 20rem;
-}
-@media screen and (min-width: 48rem) {
-  .about__image {
-    max-height: 38rem;
-  }
-}
-@media screen and (min-width: 80rem) {
-  .about__image {
-    max-height: 48rem;
-  }
-}
-.about__quote {
-  margin: 1.6rem auto auto auto;
-  line-height: 2rem;
-  font-family: "AvenirNextLTPro-Demi";
-  flex-wrap: wrap;
-}
-@media screen and (min-width: 48rem) {
-  .about__quote {
-    font-size: 1.5rem;
-    margin: 1.6rem 0rem;
-  }
-}
-@media screen and (min-width: 80rem) {
-  .about__quote {
-    justify-content: center;
     max-width: 63.75rem;
-  }
-}
-.about__auth {
-  margin: 1rem auto auto 0;
-  font-weight: 600;
-  font-family: "AvenirNextLTPro-Demi";
-}
-.about__container-des {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 1rem;
-}
-@media screen and (min-width: 48rem) {
-  .about__container-des {
-    width: 90%;
-    display: flexbox;
-    margin: auto;
-  }
-}
-@media screen and (min-width: 80rem) {
-  .about__container-des {
-    padding: 1rem 4rem 1rem 4rem;
-  }
-}
-.about__title-des {
-  margin-left: 0rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  font-weight: 400;
-}
-@media screen and (min-width: 48rem) {
-  .about__title-des {
-    font-size: 1.5rem;
-    line-height: 2.75rem;
-  }
-}
-.about__para-container {
-  line-height: 1.5;
-}
-@media screen and (min-width: 48rem) {
-  .about__para-container {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
-.about__para {
+.shows__btn {
+  width: 100%;
+  padding: 1rem;
+  color: #FFFFFF;
+  background-color: #323232;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 48rem) {
+  .shows__btn {
+    width: 11.75rem;
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+  }
+}
+.shows__title-container {
+  margin-bottom: 2rem;
+}
+.shows__title {
+  margin: 2rem 0rem 0rem 0rem;
+  font-family: "AvenirNextLTPro-Demi";
+  font-size: 2.2rem;
+  color: black;
+}
+.shows__label {
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
+  color: #AFAFAF;
+}
+@media screen and (min-width: 48rem) {
+  .shows__label {
+    display: none;
+  }
+}
+.shows__date {
+  font-family: "AvenirNextLTPro-Demi";
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 48rem) {
+  .shows__date {
+    max-width: 11.75rem;
+  }
+}
+.shows__loc {
+  font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 48rem) {
-  .about__para {
-    padding: 0rem 1.5rem 0rem 0rem;
-    font-size: 1rem;
+  .shows__loc {
+    max-width: 11.75rem;
   }
 }
-@media screen and (min-width: 80rem) {
-  .about {
+.shows__venue {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 48rem) {
+  .shows__venue {
+    max-width: 11.75rem;
+  }
+}
+.shows__new-sec {
+  margin-bottom: 1.2rem;
+}
+@media screen and (min-width: 48rem) {
+  .shows__new-sec {
     display: flex;
-    margin: 0 auto;
-    max-width: 63.75rem;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0rem;
-  }
-}
-
-.gallery {
-  background-color: #FAFAFA;
-  display: flex;
-  flex-direction: column;
-  padding: 2.4rem 1.6rem 0rem 1.6rem;
-}
-.gallery__title {
-  font-size: 2.25rem;
-  font-weight: 600;
-  font-family: "AvenirNextLTPro-Demi";
-}
-.gallery__image {
-  padding: 1rem 0rem;
-}
-@media screen and (min-width: 48rem) {
-  .gallery__image {
-    width: 33.3%;
-    padding: 0.9rem 1.8rem 0.9rem 0rem;
-  }
-}
-.gallery__image--cornor {
-  padding-right: 0;
-}
-.gallery__image-container {
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 48rem) {
-  .gallery__image-container {
     flex-direction: row;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .shows__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.shows__title--show {
+  display: none;
+}
+@media screen and (min-width: 48rem) {
+  .shows__title--show {
+    display: flex;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
-    margin-right: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #AFAFAF;
+    width: 95.5%;
   }
+}
+.shows__loc--space {
+  visibility: hidden;
+  width: 12%;
 }
 @media screen and (min-width: 80rem) {
-  .gallery__container {
-    display: flex;
-    max-width: 63.75rem;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0rem;
+  .shows__schedule {
+    width: 70%;
   }
-}
-
-.conv {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@media screen and (min-width: 48rem) {
-  .conv {
-    display: flex;
-    justify-content: center;
-    margin: 1rem auto;
-    width: 85%;
-  }
-}
-@media screen and (min-width: 80rem) {
-  .conv {
-    width: 50%;
-  }
-}
-.conv__form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 85%;
-}
-.conv__name-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.conv__name-input {
-  font-size: 1rem;
-  width: 100%;
-  background-color: #FAFAFA;
-  border-radius: 4px;
-  border: 2px solid #E1E1E1;
-  height: 3rem;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
-}
-.conv__comment-input {
-  background-color: #FAFAFA;
-  font-size: 1rem;
-  width: 100%;
-  border-radius: 4px;
-  border: 2px solid #E1E1E1;
-  height: 8rem;
-  padding-bottom: 4rem;
-  padding-left: 1rem;
-  margin-bottom: 1.5rem;
-}
-.conv__btn {
-  width: 100%;
-  height: 5.6rem;
-  background-color: #323232;
-  color: #FFF;
-  font-size: 1.6rem;
-  border-radius: 5px;
-  border: none;
-  margin-bottom: 1.5rem;
-}
-.conv__profile {
-  display: flex;
-  width: 13%;
-  justify-content: flex-end;
-}
-.conv__profile-img {
-  margin-top: 1.3rem;
-  width: 2.75em;
-  height: 2.75rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 1.3rem;
-}
-.conv__section {
-  padding: 2.4rem 1.6rem 0rem 1.6rem;
-}
-@media screen and (min-width: 80rem) {
-  .conv__section {
-    display: flex;
-    max-width: 63.75rem;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0rem;
-  }
-}
-
-.comments {
-  padding: 1rem 1.6rem 0rem 1.6rem;
-}
-.comments__user-cont {
-  width: 85%;
-}
-.comments__user-detail {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.comments__comment-cont {
-  display: flex;
-  flex-direction: row;
-}
-.comments__avatar-cont {
-  justify-content: flex-end;
-  border-radius: 1.3rem;
-  width: 2.75em;
-  height: 2.75rem;
-  background-color: #E1E1E1;
-  margin-right: 1.5rem;
-  margin-top: 0.5rem;
-}
-@media screen and (min-width: 48rem) {
-  .comments__comment-cont {
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    margin: 1rem auto;
-  }
-}
-@media screen and (min-width: 48rem) {
-  .comments__new-sec {
-    display: flex;
-    justify-content: center;
-    margin: 1rem auto;
-  }
-}
-@media screen and (min-width: 80rem) {
-  .comments__new-sec {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    margin: 1rem auto;
-  }
-}
-@media screen and (min-width: 80rem) {
-  .comments {
-    display: flex;
-    max-width: 63.75rem;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0rem;
-  }
-}/*# sourceMappingURL=bio.css.map */
+}/*# sourceMappingURL=shows.css.map */
