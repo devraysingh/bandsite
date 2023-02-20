@@ -383,6 +383,10 @@
         border-radius: 5px;
         border: none;
         margin-bottom: 1.5rem;
+        &:hover{
+            background-color: black;
+
+        }
         @include tablet {
             width: 33%;
             height: 3.2rem;

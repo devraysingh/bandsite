@@ -620,6 +620,9 @@ a {
   border: none;
   margin-bottom: 1.5rem;
 }
+.conv__btn:hover {
+  background-color: black;
+}
 @media screen and (min-width: 48rem) {
   .conv__btn {
     width: 33%;
