@@ -223,7 +223,7 @@ a {
 }
 @media screen and (min-width: 48rem) {
   .footer__container-contact {
-    width: 33%;
+    width: 26%;
   }
 }
 .footer__email {
