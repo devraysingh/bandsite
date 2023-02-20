@@ -417,10 +417,15 @@ a {
   margin-bottom: 2rem;
 }
 .shows__title {
-  margin: 2rem 0rem 0rem 0rem;
+  margin: 2rem 0rem 0rem 1rem;
   font-family: "AvenirNextLTPro-Demi";
   font-size: 2.2rem;
   color: black;
+}
+@media screen and (min-width: 48rem) {
+  .shows__title {
+    margin-left: 0rem;
+  }
 }
 .shows__label {
   margin-top: 1.3rem;

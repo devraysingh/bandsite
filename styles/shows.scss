@@ -132,10 +132,13 @@
         margin-bottom: 2rem;
     }
     &__title{
-        margin: 2rem 0rem 0rem 0rem;
+        margin: 2rem 0rem 0rem 1rem;
         font-family: $subheader-font;
         font-size: 2.2rem;
         color: black;
+        @include tablet{
+            margin-left: 0rem;
+        }
     }
     &__label{
         margin-top: 1.3rem;
