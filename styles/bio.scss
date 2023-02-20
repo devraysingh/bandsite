@@ -304,10 +304,15 @@
         font-size: 2.0rem;
         font-weight: 600;
         font-family: $subheader-font;
-        margin: 3rem 0rem 2rem 0rem;
+        margin: 0rem 0rem 2rem 0rem;
         @include tablet {
             font-size: 2.25rem;
+            margin: 1rem 0rem 2rem 0rem;
   
+        }
+        @include desktop {
+            margin: 3rem 0rem 2rem 0rem;
+
         }
     }
  

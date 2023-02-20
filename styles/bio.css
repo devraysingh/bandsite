@@ -558,11 +558,17 @@ a {
   font-size: 2rem;
   font-weight: 600;
   font-family: "AvenirNextLTPro-Demi";
-  margin: 3rem 0rem 2rem 0rem;
+  margin: 0rem 0rem 2rem 0rem;
 }
 @media screen and (min-width: 48rem) {
   .conv__section-title {
     font-size: 2.25rem;
+    margin: 1rem 0rem 2rem 0rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .conv__section-title {
+    margin: 3rem 0rem 2rem 0rem;
   }
 }
 .conv__form {
