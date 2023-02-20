@@ -158,7 +158,6 @@ a {
   color: #FAFAFA;
   display: flex;
   flex-direction: column;
-  margin: auto;
   margin-top: 2rem;
 }
 .footer__title {
@@ -268,10 +267,10 @@ a {
   color: #FAFAFA;
   display: flex;
   flex-direction: column;
-  margin: auto;
 }
 @media screen and (min-width: 48rem) {
   .footer__container {
+    margin: auto;
     padding: 0rem;
     flex-wrap: wrap;
     flex-direction: row;

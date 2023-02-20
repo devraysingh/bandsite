@@ -150,8 +150,10 @@ a {
     color: #FAFAFA;
     display: flex;
     flex-direction: column;
-    margin: auto;
+ 
     margin-top: 2rem;
+
+    
 
  
 
@@ -269,9 +271,10 @@ a {
         color: #FAFAFA;
         display: flex;
         flex-direction: column;
-        margin: auto;
+  
     
         @include tablet {
+            margin: auto;
             padding: 0rem ;
             flex-wrap: wrap;
             flex-direction: row;

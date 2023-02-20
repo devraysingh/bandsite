@@ -296,7 +296,7 @@
     }
     @include desktop {
         max-width: 63.75;
-        width: 78%;
+        width: 50%;
 
     }    
      
@@ -512,6 +512,7 @@
 
     @include desktop {
         @include desktop-size;
+        width: 45%;
         
     }
 
