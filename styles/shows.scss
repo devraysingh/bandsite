@@ -112,6 +112,7 @@
         border-radius: 0.5rem;
         margin-bottom: 1.5rem;
         @include tablet {
+            margin-bottom: 0rem;
             width: 11.75rem;
             font-size: 1rem;
             padding: 1rem 1.2rem;
@@ -167,9 +168,12 @@
 
     &__new-sec{
         margin-bottom: 1.2rem;
+        opacity: 0.5;
         @include tablet{
+            margin-bottom: 0rem;
             display: flex;
             flex-direction: row;
+            border-color: #E1E1E1;
 
         }
 
@@ -177,17 +181,20 @@
 
 
     &__card{
-        &--clicked{
-            background-color:#E1E1E1;
-        }
+        padding: 1rem;
+     
         &:hover{
             background-color: #FAFAFA;
         }
+        &--clicked{
+            background-color:#E1E1E1;
+        }
         @include tablet{
+            padding: 1rem 0;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
+            align-items: self-end;
             
         }
     }
@@ -196,13 +203,50 @@
         display: none;
         @include tablet{
             display: flex;
-    
             flex-wrap: wrap;
             flex-direction: row;
-            justify-content: space-between;
             color: #AFAFAF;
+            margin-bottom: 1rem;
 
         }
+    }
+
+    &__date-tab{
+        @include tablet{
+            width: 20%;
+            margin: 0 5rem 0 0rem;
+            font-size: 0.8rem;
+            
+        }
+        
+    }
+    &__venue-tab{
+
+        @include tablet{
+            width: 20%;
+            margin: 0 0rem 0 0rem;
+            font-size: 0.8rem;
+
+        }
+        
+    }
+    &__loc-tab{
+        @include tablet{
+            width: 20%;
+            margin: 0 5rem 0 0rem;
+            font-size: 0.8rem;
+
+        }
+        
+    }
+
+    &__loc-spacer{
+        @include tablet{
+
+            margin: 0 5rem 0 0rem;
+
+        }
+        
     }
 
     &__loc--space{
