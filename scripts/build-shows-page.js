@@ -86,3 +86,25 @@
         showsSchedule.appendChild(newSec);
 
     });
+
+
+
+
+    showsSchedule.addEventListener("click", (e) => {
+        const showCards = document.querySelectorAll('.shows__card');
+
+        showCards.forEach(element => element.classList.remove('shows__card--clicked'))
+        e.preventDefault();
+        console.log(e.target);
+        if ((e.target.nodeName === 'DIV') && e.target.classList.contains('shows__card')) {
+            e.target.classList.add("shows__card--clicked");
+        } else if(e.target.nodeName === 'HR') {
+            return;
+        }
+        else {
+            const clickedDiv = e.target.parentNode;
+            if(clickedDiv.classList.contains("shows__card"))
+                clickedDiv.classList.add("shows__card--clicked");
+        }
+    });
+
