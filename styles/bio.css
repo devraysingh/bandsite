@@ -558,7 +558,7 @@ a {
   font-size: 2rem;
   font-weight: 600;
   font-family: "AvenirNextLTPro-Demi";
-  margin-bottom: 2rem;
+  margin: 2rem 0rem;
 }
 @media screen and (min-width: 48rem) {
   .conv__section-title {
