@@ -45,6 +45,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 9999;
 
     @include tablet {
         padding-top: 0rem;

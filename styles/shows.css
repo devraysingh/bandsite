@@ -54,6 +54,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 9999;
 }
 @media screen and (min-width: 48rem) {
   .header {
@@ -465,7 +466,8 @@ a {
 }
 .shows__new-sec {
   margin-bottom: 1.2rem;
-  opacity: 0.5;
+  opacity: 0.1;
+  position: relative;
 }
 @media screen and (min-width: 48rem) {
   .shows__new-sec {

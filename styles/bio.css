@@ -54,6 +54,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 9999;
 }
 @media screen and (min-width: 48rem) {
   .header {
