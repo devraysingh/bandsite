@@ -301,14 +301,14 @@ a {
 }
 @media screen and (min-width: 48rem) {
   .hero {
-    height: 29rem;
+    height: 35rem;
     margin-top: 3.28rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .hero {
     display: flex;
-    height: 45.5rem;
+    height: 55rem;
     margin-top: 4.78rem;
     margin: 0 auto;
     justify-content: center;
