@@ -709,6 +709,11 @@ a {
     justify-content: center;
   }
 }
+@media screen and (min-width: 80rem) {
+  .comments__comment-cont {
+    width: 61%;
+  }
+}
 .comments__name {
   font-family: "AvenirNextLTPro-Demi";
   margin-bottom: 1rem;
@@ -730,7 +735,7 @@ a {
 }
 @media screen and (min-width: 80rem) {
   .comments__new-sec {
-    width: 78%;
+    width: 60%;
   }
 }
 @media screen and (min-width: 80rem) {
