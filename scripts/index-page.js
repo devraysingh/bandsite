@@ -1,4 +1,4 @@
-
+    //array creation
     const comments = [
         {
             name: "Conner Walton",
@@ -17,10 +17,8 @@
         }
     ];
 
-
+    //
     const form = document.querySelector(".conv__form");
-
-
     const commentsSection = document.querySelector(".comments");
 
     console.log(form);
@@ -33,6 +31,7 @@
         let newSec = document.createElement('hr');
         commentsSection.appendChild(newSec);
         newSec.classList.add("comments__new-sec");
+        //looping through each comment
         comments.forEach((comment) => {
 
             const commentContainer = document.createElement("div");
@@ -80,7 +79,7 @@
         });
         
     };
-
+    //invoking function
     displayComment();
 
     form.addEventListener("submit", (e) => {
