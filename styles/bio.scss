@@ -526,7 +526,8 @@
 
     @include desktop {
         @include desktop-size;
-        width: 45%;
+        width: 65%;
+        max-width: 52rem;
         
     }
 

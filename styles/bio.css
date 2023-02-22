@@ -752,6 +752,7 @@ a {
     justify-content: center;
     margin: 0 auto;
     padding: 0rem;
-    width: 45%;
+    width: 65%;
+    max-width: 52rem;
   }
 }/*# sourceMappingURL=bio.css.map */
