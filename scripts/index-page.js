@@ -94,10 +94,8 @@
             comment: e.target.comment.value
         };
         console.log(newComment);
-        e.target.name.value = "";
-        e.target.comment.value = "";
         comments.unshift(newComment);
         displayComment();
- 
+        form.reset()
  
     });

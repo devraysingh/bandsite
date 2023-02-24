@@ -34,20 +34,43 @@
 
 
     const showsSchedule = document.querySelector(".shows__schedule");
-    console.log(showsSchedule);
+    console.log(showsSchedule);    
+    const tabDesMenu = document.createElement("div");
+    let dateLabel = document.createElement("p");
+    let venueLabel = document.createElement("p");
+    let locLabel = document.createElement("p");
+    const spacerContainer = document.createElement("div");
+    dateLabel.classList.add("shows__date-tab");
+    venueLabel.classList.add("shows__venue-tab");
+    locLabel.classList.add("shows__loc-tab");
+    spacerContainer.classList.add("shows__loc-spacer");
+    tabDesMenu.classList.add("shows__title-show");
+    dateLabel.innerText = "DATE";
+    venueLabel.innerText = "VENUE";
+    locLabel.innerText = "LOCATION";
+    tabDesMenu.appendChild(dateLabel);
+    tabDesMenu.appendChild(venueLabel);
+    tabDesMenu.appendChild(locLabel);
+    tabDesMenu.appendChild(spacerContainer);
+    console.log(tabDesMenu)
+
+    showsSchedule.appendChild(tabDesMenu);
+
+
+
+
 
     showTimes.forEach((show) => {
         //Element Creation for Show Card 
+        dateLabel = document.createElement("p");
+        venueLabel = document.createElement("p");
+        locLabel = document.createElement("p");
         const showCard  = document.createElement("div");
-        const dateLabel = document.createElement("p");
-        const showDate = document.createElement("p");
-        const venueLabel = document.createElement("p");
-        const venueName = document.createElement("p");
-        const locLabel = document.createElement("p");
+        const showDate = document.createElement("p");   
+        const venueName = document.createElement("p"); 
         const locName = document.createElement("p");
         const button = document.createElement("button");
         const newSec =  document.createElement("hr");
-  
 
         //data insertion
         dateLabel.innerText = "DATE";

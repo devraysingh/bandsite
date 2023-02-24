@@ -322,6 +322,7 @@ a {
 }
 @media screen and (min-width: 48rem) {
   .hero {
+    justify-content: start;
     height: 35rem;
     margin-top: 3.28rem;
   }
@@ -346,21 +347,24 @@ a {
   font-family: "AvenirNext LT Pro";
   font-weight: 600;
   font-size: 2.7rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 @media screen and (min-width: 48rem) {
   .hero__title {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    word-spacing: 0.7rem;
   }
 }
 @media screen and (min-width: 48rem) {
   .hero__title__container {
-    width: 65%;
+    width: 100%;
+    max-width: 31.9rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .hero__title__container {
-    width: 40%;
+    width: 50%;
+    max-width: 44rem;
   }
 }
 @media screen and (min-width: 48rem) {
@@ -369,11 +373,21 @@ a {
   }
 }
 .hero__song {
-  padding: 1rem;
+  padding: 1rem 0rem;
   width: 100%;
+  border: none;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 48rem) {
   .hero__song {
+    height: 12.5rem;
+    width: 24.5rem;
+    font-size: 0.5rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .hero__song {
+    height: 12.5rem;
     width: 50%;
   }
 }
@@ -426,7 +440,7 @@ a {
 @media screen and (min-width: 48rem) {
   .shows__btn {
     margin-bottom: 0rem;
-    width: 11.75rem;
+    width: 25%;
     font-size: 1rem;
     padding: 1rem 1.2rem;
   }
@@ -464,8 +478,9 @@ a {
 }
 @media screen and (min-width: 48rem) {
   .shows__date {
-    max-width: 11.75rem;
     font-size: 1rem;
+    width: 25%;
+    margin-right: auto;
   }
 }
 .shows__loc {
@@ -474,8 +489,8 @@ a {
 }
 @media screen and (min-width: 48rem) {
   .shows__loc {
-    max-width: 11.75rem;
     font-size: 1rem;
+    width: 25%;
   }
 }
 .shows__venue {
@@ -484,8 +499,8 @@ a {
 }
 @media screen and (min-width: 48rem) {
   .shows__venue {
-    max-width: 11.75rem;
     font-size: 1rem;
+    width: 25%;
   }
 }
 .shows__new-sec {
@@ -515,7 +530,6 @@ a {
     padding: 1rem 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: self-end;
   }
 }
@@ -533,28 +547,29 @@ a {
 }
 @media screen and (min-width: 48rem) {
   .shows__date-tab {
-    width: 20%;
-    margin: 0 5rem 0 0rem;
+    width: 25%;
+    margin: 0 0 0 0rem;
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 48rem) {
   .shows__venue-tab {
-    width: 20%;
-    margin: 0 0rem 0 0rem;
+    width: 25%;
+    margin: 0 0 0 0rem;
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 48rem) {
   .shows__loc-tab {
-    width: 20%;
-    margin: 0 5rem 0 0rem;
+    width: 25%;
+    margin: 0 0 0 0rem;
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 48rem) {
   .shows__loc-spacer {
-    margin: 0 5rem 0 0rem;
+    width: 25%;
+    margin: 0 0 0 0rem;
   }
 }
 .shows__loc--space {

@@ -14,6 +14,7 @@
     padding: 1.6rem;
 
     @include tablet {
+        justify-content: start;
 
         height: 35rem;
         margin-top: 3.28rem;
@@ -42,17 +43,20 @@
         font-family: $subheader-font;
         font-weight: 600;
         font-size: 2.7rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
         @include tablet{
-            font-size: 3rem;
+            font-size: 3.5rem;
+            word-spacing: 0.7rem;
         }
         &__container{
         
             @include tablet{
-                width: 65%;
+                width: 100%;
+                max-width: 31.9rem;
             }
             @include desktop{
-                width: 40%
+                width: 50%;
+                max-width: 44rem;
             }
        
         }
@@ -67,10 +71,22 @@
     
     }
     &__song{
-        padding: 1rem;
+        padding: 1rem 0rem;
         width: 100%;
+        border: none;
+        margin-top: 1rem;
         @include tablet{
-            width: 50%
+   
+     
+            height: 12.5rem;
+            width: 24.5rem;
+            font-size: 0.5rem;
+         
+   
+        }
+        @include desktop {
+            height: 12.5rem;
+            width: 50%;
         }
     }
 
@@ -123,9 +139,10 @@
         }
         @include tablet {
             margin-bottom: 0rem;
-            width: 11.75rem;
+            width: 25%;
             font-size: 1rem;
             padding: 1rem 1.2rem;
+  
         }
       
     }
@@ -158,8 +175,9 @@
         margin-bottom: 1rem;
         font-size: 1.25rem; 
         @include tablet{
-            max-width: 11.75rem;
             font-size: 1rem; 
+            width: 25%;
+            margin-right: auto;
         }
     }
 
@@ -167,8 +185,8 @@
         font-size: 1.25rem; 
         margin-bottom: 1rem;
         @include tablet{
-            max-width: 11.75rem;
             font-size: 1rem; 
+            width: 25%;
         }
     }
 
@@ -176,8 +194,8 @@
         font-size: 1.25rem; 
         margin-bottom: 1rem;
         @include tablet{
-            max-width: 11.75rem;
             font-size: 1rem; 
+            width: 25%;
         }
     }
 
@@ -209,7 +227,7 @@
             padding: 1rem 0;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            
             align-items: self-end;
             
         }
@@ -224,13 +242,14 @@
             color: #AFAFAF;
             margin-bottom: 1rem;
 
+
         }
     }
 
     &__date-tab{
         @include tablet{
-            width: 20%;
-            margin: 0 5rem 0 0rem;
+            width: 25%;
+            margin: 0 0 0 0rem;
             font-size: 0.8rem;
             
         }
@@ -239,8 +258,8 @@
     &__venue-tab{
 
         @include tablet{
-            width: 20%;
-            margin: 0 0rem 0 0rem;
+            width: 25%;
+            margin: 0 0 0 0rem;
             font-size: 0.8rem;
 
         }
@@ -248,8 +267,8 @@
     }
     &__loc-tab{
         @include tablet{
-            width: 20%;
-            margin: 0 5rem 0 0rem;
+            width: 25%;
+            margin: 0 0 0 0rem;
             font-size: 0.8rem;
 
         }
@@ -258,8 +277,8 @@
 
     &__loc-spacer{
         @include tablet{
-
-            margin: 0 5rem 0 0rem;
+            width: 25%;
+            margin: 0 0 0 0rem;
 
         }
         
