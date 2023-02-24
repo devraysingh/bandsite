@@ -568,6 +568,7 @@ a {
     justify-content: center;
     margin: 1rem auto;
     width: 80%;
+    max-width: 40rem;
   }
 }
 @media screen and (min-width: 80rem) {
@@ -720,10 +721,10 @@ a {
 .comments__avatar-cont {
   justify-content: flex-end;
   border-radius: 1.3rem;
-  width: 2.75em;
+  width: 2.75rem;
   height: 2.75rem;
   background-color: #E1E1E1;
-  margin-right: 1.5rem;
+  margin-right: 1.18rem;
   margin-top: 0.5rem;
 }
 .comments__comment-cont {
@@ -731,10 +732,14 @@ a {
 }
 @media screen and (min-width: 48rem) {
   .comments__comment-cont {
+    margin: 0rem auto;
+    padding: 2rem 0rem;
     width: 80%;
-    max-width: 48rem;
+    max-width: 40rem;
     display: flex;
     justify-content: center;
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
   }
 }
 @media screen and (min-width: 80rem) {
@@ -759,12 +764,17 @@ a {
     justify-content: center;
     margin: 1rem auto;
     width: 80%;
-    max-width: 48rem;
+    max-width: 34rem;
   }
 }
 @media screen and (min-width: 80rem) {
   .comments__new-sec {
     width: 60%;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .comments {
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 80rem) {

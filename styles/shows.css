@@ -355,11 +355,6 @@ a {
     word-spacing: 0.7rem;
   }
 }
-@media screen and (min-width: 80rem) {
-  .hero__title {
-    margin-right: 1rem;
-  }
-}
 @media screen and (min-width: 48rem) {
   .hero__title__container {
     width: 100%;
@@ -368,8 +363,9 @@ a {
 }
 @media screen and (min-width: 80rem) {
   .hero__title__container {
-    width: 50%;
-    max-width: 48rem;
+    width: 48%;
+    max-width: 44rem;
+    margin-right: 1.9rem;
   }
 }
 @media screen and (min-width: 48rem) {
@@ -393,7 +389,7 @@ a {
 @media screen and (min-width: 80rem) {
   .hero__song {
     height: 12.5rem;
-    width: 43%;
+    width: 48%;
   }
 }
 .hero__container {
@@ -412,7 +408,7 @@ a {
 }
 @media screen and (min-width: 48rem) {
   .shows {
-    padding: 0rem 3rem;
+    padding: 0rem 1.6rem;
   }
 }
 @media screen and (min-width: 80rem) {

@@ -28,9 +28,7 @@
     function displayComment() {
 
         commentsSection.innerHTML = "";
-        let newSec = document.createElement('hr');
-        commentsSection.appendChild(newSec);
-        newSec.classList.add("comments__new-sec");
+
         //looping through each comment
         comments.forEach((comment) => {
 
@@ -43,7 +41,7 @@
             const date = document.createElement("p");
             const commentDes = document.createElement("div");
             const userComment = document.createElement("div");
-            newSec = document.createElement('hr');
+
 
             name.innerText = comment.name;
             date.innerText = comment.date;
@@ -63,7 +61,7 @@
             date.classList.add("comments__date");
             commentDes.classList.add("comments__comment-des");
             userComment.classList.add("comments__user-cont");
-            newSec.classList.add("comments__new-sec");
+
             commentContainer.classList.add("comments__comment-cont");
 
 
@@ -75,7 +73,7 @@
         
 
             commentsSection.appendChild(commentContainer);
-            commentsSection.appendChild(newSec);
+
         });
         
     };

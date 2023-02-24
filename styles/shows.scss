@@ -49,7 +49,7 @@
             word-spacing: 0.7rem;
         }
         @include desktop{
-            margin-right: 1rem;
+      
         }
         &__container{
         
@@ -58,9 +58,9 @@
                 max-width: 31.9rem;
             }
             @include desktop{
-                width: 50%;
-                max-width: 48rem;
-        
+                width: 48%;
+                max-width: 44rem;
+                margin-right: 1.9rem;
             }
        
         }
@@ -90,7 +90,7 @@
         }
         @include desktop {
             height: 12.5rem;
-            width: 43%;
+            width: 48%;
         }
     }
 
@@ -115,7 +115,7 @@
 .shows {
     padding: 1rem;
     @include tablet {
-        padding: 0rem 3rem;
+        padding: 0rem 1.6rem;
     }
     @include desktop{
         padding: 0rem;
