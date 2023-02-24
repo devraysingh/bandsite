@@ -14,6 +14,7 @@
 
 h1, h2, h3, h4 {
     font-family: $subheader-font;
+    font-weight: 600;
 }
 
 body {
@@ -114,6 +115,7 @@ a {
             padding: 0rem;
             font-size: 0.875rem;
             font-family: $subheader-font;
+            font-weight: 600;
             width: auto;
             display: flex;
             justify-content: baseline;
@@ -151,13 +153,9 @@ a {
     color: #FAFAFA;
     display: flex;
     flex-direction: column;
- 
     margin-top: 2rem;
 
     
-
- 
-
 
     &__title {
         
@@ -165,8 +163,7 @@ a {
         padding-bottom: 0;
         order: 1;
         font-size: 2.25rem;
-
-        font-weight: 500;
+        font-weight: 600;
         
     }
 
@@ -181,7 +178,7 @@ a {
             margin-left: 2rem;
         }
         @include desktop {
-            margin-left: 3rem;
+            margin-left: 3.8rem;
         }
     }
 
@@ -209,14 +206,12 @@ a {
             order: 4;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             width: 100%;
-
+            //justify-content: space-between;
         }
 
         @include desktop {
             justify-content: start;
-            width: 77%;
             flex-grow: 2;
     
         }
@@ -225,13 +220,16 @@ a {
     &__contact-company{
         margin-bottom: 1rem;
 
+
     }
     &__contact-state{
         margin-bottom: 1rem;
+
         
     }
     &__contact-country{
         margin-bottom: 1rem;
+
         
     }
 
@@ -240,7 +238,14 @@ a {
         font-size: 1rem;
         line-height: 1.5;
         @include tablet {
-            margin-right: auto;
+       
+            font-size: 0.8rem;
+            margin-right: 3.81rem;
+
+        }
+        @include desktop {
+    
+            margin-right: 5.7rem;
         }
     }
 
@@ -252,6 +257,8 @@ a {
 
      &__contact-title{
         font-family: $subheader-font;
+        font-weight: 600;
+
      }
 
 
@@ -265,8 +272,9 @@ a {
             width: 8.5rem;
             order: 3;
             margin: 0rem 0rem;
-            padding: 0rem 0rem;
-            max-height: 2.5rem;
+            padding: 0.5rem 0rem 0rem 0rem;
+            height: 2rem;
+ 
             
             
         }
@@ -276,6 +284,7 @@ a {
         order: 5;
         @include tablet{
             margin-top: 2.4rem;
+            font-size: 0.8rem;
         }
         @include desktop{
             margin-top: 3rem;

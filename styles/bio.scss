@@ -51,14 +51,15 @@
         font-size: 2rem;
         letter-spacing: 0.1rem;
         font-family: $subheader-font;
+        
+        font-weight: 600;
 
         @include tablet {
             display: flex;
             width: 100%;
             font-size: 3.4rem;
             width: 100%;
-            font-family: $subheader-font;
-
+      
         }
         @include desktop {
             font-size: 4rem;
@@ -135,6 +136,7 @@
         margin: 1.6rem auto auto auto;
         line-height: 2rem;
         font-family: $subheader-font;
+        font-weight: 600;
         flex-wrap: wrap;
         @include tablet{
             font-size: 1.5rem;
@@ -492,6 +494,7 @@
     }
     &__name{
         font-family: $subheader-font;
+        font-weight: 600;
         margin-bottom: 1rem;
 
     }
