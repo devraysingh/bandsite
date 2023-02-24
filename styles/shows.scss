@@ -139,8 +139,12 @@
 
         &:hover{
             background-color: black;
+            cursor: pointer;
 
         }
+        &:active {
+            cursor: pointer;
+          }
         @include tablet {
             margin-bottom: 0rem;
             width: 25%;
@@ -223,9 +227,13 @@
      
         &:hover{
             background-color: #FAFAFA;
+            cursor: pointer;
         }
         &--clicked{
             background-color:#E1E1E1;
+        }
+        &:active {
+            cursor: pointer;
         }
         @include tablet{
             padding: 1rem 0;

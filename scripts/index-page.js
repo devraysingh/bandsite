@@ -21,9 +21,6 @@
     const form = document.querySelector(".conv__form");
     const commentsSection = document.querySelector(".comments");
 
-    console.log(form);
-
-    console.log(commentsSection);
 
     function displayComment() {
 
@@ -84,14 +81,11 @@
 
         e.preventDefault();
         let date = new Date().toLocaleDateString('en-us');
-        console.log(e.target.name.value);
-
         let newComment = {
             name: e.target.name.value,
             date: date,
             comment: e.target.comment.value
         };
-        console.log(newComment);
         comments.unshift(newComment);
         displayComment();
         form.reset()

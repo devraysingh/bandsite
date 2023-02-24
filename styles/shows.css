@@ -437,6 +437,10 @@ a {
 }
 .shows__btn:hover {
   background-color: black;
+  cursor: pointer;
+}
+.shows__btn:active {
+  cursor: pointer;
 }
 @media screen and (min-width: 48rem) {
   .shows__btn {
@@ -522,9 +526,13 @@ a {
 }
 .shows__card:hover {
   background-color: #FAFAFA;
+  cursor: pointer;
 }
 .shows__card--clicked {
   background-color: #E1E1E1;
+}
+.shows__card:active {
+  cursor: pointer;
 }
 @media screen and (min-width: 48rem) {
   .shows__card {

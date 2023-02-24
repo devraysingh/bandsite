@@ -395,7 +395,10 @@
         margin-bottom: 1.5rem;
         &:hover{
             background-color: black;
+            cursor: pointer;
 
+        }:active {
+            cursor: pointer;
         }
         @include tablet {
             width: 33%;

@@ -652,6 +652,10 @@ a {
 }
 .conv__btn:hover {
   background-color: black;
+  cursor: pointer;
+}
+.conv__btn :active {
+  cursor: pointer;
 }
 @media screen and (min-width: 48rem) {
   .conv__btn {

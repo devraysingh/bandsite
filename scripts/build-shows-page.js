@@ -33,8 +33,7 @@
     
 
 
-    const showsSchedule = document.querySelector(".shows__schedule");
-    console.log(showsSchedule);    
+    const showsSchedule = document.querySelector(".shows__schedule");  
     const tabDesMenu = document.createElement("div");
     let dateLabel = document.createElement("p");
     let venueLabel = document.createElement("p");
@@ -52,7 +51,6 @@
     tabDesMenu.appendChild(venueLabel);
     tabDesMenu.appendChild(locLabel);
     tabDesMenu.appendChild(spacerContainer);
-    console.log(tabDesMenu)
 
     showsSchedule.appendChild(tabDesMenu);
 
@@ -118,7 +116,6 @@
 
         showCards.forEach(element => element.classList.remove('shows__card--clicked'))
         e.preventDefault();
-        console.log(e.target);
         if ((e.target.nodeName === 'DIV') && e.target.classList.contains('shows__card')) {
             e.target.classList.add("shows__card--clicked");
         } else if(e.target.nodeName === 'HR') {
