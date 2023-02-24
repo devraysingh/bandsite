@@ -186,10 +186,13 @@ a {
     }
 
     &__image {
-  
-        padding: 1rem 1rem 0rem 0rem;
+        margin-top: 0.5rem;
+        padding: 1rem 2.75rem 0rem 0rem;
+        height: 3rem;
 
         @include tablet{
+            margin-top: 0rem;
+            height: 2rem;
             padding: 0.7rem 1rem 0rem 0rem;
         }
         @include desktop {
@@ -219,12 +222,25 @@ a {
         }
     }
 
+    &__contact-company{
+        margin-bottom: 1rem;
+
+    }
+    &__contact-state{
+        margin-bottom: 1rem;
+        
+    }
+    &__contact-country{
+        margin-bottom: 1rem;
+        
+    }
+
     &__container-contact{
         margin-top: 2rem;
         font-size: 1rem;
         line-height: 1.5;
         @include tablet {
-            width: 26%;
+            margin-right: auto;
         }
     }
 
