@@ -48,6 +48,9 @@
             font-size: 3.5rem;
             word-spacing: 0.7rem;
         }
+        @include desktop{
+            margin-right: 1rem;
+        }
         &__container{
         
             @include tablet{
@@ -56,7 +59,8 @@
             }
             @include desktop{
                 width: 50%;
-                max-width: 44rem;
+                max-width: 48rem;
+        
             }
        
         }
@@ -86,7 +90,7 @@
         }
         @include desktop {
             height: 12.5rem;
-            width: 50%;
+            width: 43%;
         }
     }
 
