@@ -18,8 +18,8 @@
     ];
 
     //
-
-    
+    const form = document.querySelector(".conv__form");
+    const commentsSection = document.querySelector(".comments");
 
     axios.get("https://project-1-api.herokuapp.com/comments/?api_key=f8ca13e4-fee9-4e74-8598-bc3b89d638b4")
     .then((res) => {

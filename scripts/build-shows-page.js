@@ -1,5 +1,6 @@
-    const showsSchedule = document.querySelector(".shows__schedule");  
 
+    setupShows();
+    
     axios.get("https://project-1-api.herokuapp.com/showdates?api_key=f8ca13e4-fee9-4e74-8598-bc3b89d638b4")
     .then((res) => {
         let showsTimes = res.data;
@@ -10,6 +11,8 @@
     .catch((error) => {
         console.log(error);
     });
+
+
 
     showsMenu();
 
@@ -88,3 +91,14 @@
 
 
     
+    function setupShows(){
+        const showsSection = document.querySelector('.shows');
+        const showsTitleContainer = document.createElement('div');
+        const showsTitle = document.createElement('h2');
+        showsTitle.innerText = "Shows";
+        showsTitle.classList.add("shows__title");
+        showsTitleContainer.appendChild(showsTitle);
+        const showsSchedule = document.createElement('div');
+        showsSchedule.classList.add("shows__schedule");  
+        showsSection.append(showsTitleContainer, showsSchedule);
+    }
