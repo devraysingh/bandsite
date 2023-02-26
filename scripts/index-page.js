@@ -2,15 +2,21 @@
     const form = document.querySelector(".conv__form");
     const commentsSection = document.querySelector(".comments");
 
-    axios.get("https://project-1-api.herokuapp.com/comments/?api_key=f8ca13e4-fee9-4e74-8598-bc3b89d638b4")
-    .then((res) => {
-        const comments  = res.data.sort((x, y) => {
-            return y.timestamp - x.timestamp;
-        })
-        displayComment(comments);
-    }).catch((error) => {
+    fetchComments();
 
-    })
+    function fetchComments(){
+        axios.get("https://project-1-api.herokuapp.com/comments/?api_key=f8ca13e4-fee9-4e74-8598-bc3b89d638b4")
+        .then((res) => {
+            const comments  = res.data.sort((x, y) => {
+                return y.timestamp - x.timestamp;
+            })
+            displayComment(comments);
+        }).catch((error) => {
+    
+        })
+    }
+
+
 
 
     function displayComment(comments) {
@@ -50,18 +56,16 @@
 
 
     form.addEventListener("submit", (e) => {
-
         e.preventDefault();
-        let date = new Date().toLocaleDateString('en-us');
-        let newComment = {
+        axios.post("https://project-1-api.herokuapp.com/comments/?api_key=f8ca13e4-fee9-4e74-8598-bc3b89d638b4", {
             name: e.target.name.value,
-            date: date,
             comment: e.target.comment.value
-        };
-        comments.unshift(newComment);
-        displayComment();
+        }).then((res) =>{
+            fetchComments();
+        }).catch((error) =>{
+            console.log(error);
+        })
         form.reset()
- 
     });
 
 
