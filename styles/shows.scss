@@ -224,12 +224,17 @@
 
     &__card{
         padding: 1rem;
+        border-top: 1px solid #E1E1E1;
+        border-bottom: 1px solid #E1E1E1;
      
         &:hover{
             background-color: #FAFAFA;
             cursor: pointer;
         }
         &--clicked{
+            background-color:#E1E1E1;
+        }
+        &--clicked:hover{
             background-color:#E1E1E1;
         }
         &:active {
@@ -261,7 +266,7 @@
     &__date-tab{
         @include tablet{
             width: 25%;
-            margin: 0 0 0 0rem;
+            margin: 0rem;
             font-size: 0.8rem;
             
         }
@@ -280,7 +285,7 @@
     &__loc-tab{
         @include tablet{
             width: 25%;
-            margin: 0 0 0 0rem;
+            margin: 0;
             font-size: 0.8rem;
 
         }
@@ -290,7 +295,7 @@
     &__loc-spacer{
         @include tablet{
             width: 25%;
-            margin: 0 0 0 0rem;
+            margin: 0;
 
         }
         
