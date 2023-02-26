@@ -1,21 +1,17 @@
-
-    setupShows();
-    
-    axios.get("https://project-1-api.herokuapp.com/showdates?api_key=f8ca13e4-fee9-4e74-8598-bc3b89d638b4")
-    .then((res) => {
-        let showsTimes = res.data;
-        showsCard(showsTimes);
-        const cards = document.querySelectorAll('.shows__card');
-        cards.forEach(i => i.addEventListener('click', cardClick));
-    })
-    .catch((error) => {
-        console.log(error);
-    });
-
-
-
+    setupShows();    
+    fetchComments();
     showsMenu();
-
+    function setupShows(){
+        const showsSection = document.querySelector('.shows');
+        const showsTitleContainer = document.createElement('div');
+        const showsTitle = document.createElement('h2');
+        showsTitle.innerText = "Shows";
+        showsTitle.classList.add("shows__title");
+        showsTitleContainer.appendChild(showsTitle);
+        const showsSchedule = document.createElement('div');
+        showsSchedule.classList.add("shows__schedule");  
+        showsSection.append(showsTitleContainer, showsSchedule);
+    }
     function showsMenu(){
         const showsSchedule = document.querySelector(".shows__schedule");  
         const tabDesMenu = document.createElement("div");
@@ -34,7 +30,19 @@
         tabDesMenu.append(dateLabel, venueLabel, locLabel, spacerContainer);
         showsSchedule.append(tabDesMenu);
     };
+    function fetchComments(){
+        axios.get("https://project-1-api.herokuapp.com/showdates?api_key=f8ca13e4-fee9-4e74-8598-bc3b89d638b4")
+        .then((res) => {
+            let showsTimes = res.data;
+            showsCard(showsTimes);
+            const cards = document.querySelectorAll('.shows__card');
+            cards.forEach(i => i.addEventListener('click', cardClick));
+        })
+        .catch((error) => {
+            console.log(error);
+        });
 
+    }
     function showsCard(showsTimes) {
         for (const show of showsTimes) {
             //Element Creation for Show Card 
@@ -72,33 +80,15 @@
             showsSchedule.appendChild(showCard);
         };
     };
-
     function cardClick(e){
         e.preventDefault();
         const cards = document.querySelectorAll('.shows__card');
         cards.forEach(element => element.classList.remove('shows__card--clicked'))
         if ((e.target.nodeName === 'DIV') && e.target.classList.contains('shows__card')) {
             e.target.classList.add("shows__card--clicked");
-        } else if(e.target.nodeName === 'HR') {
-            return;
-        }
-        else {
+        } else {
             const clickedDiv = e.target.parentNode;
             if(clickedDiv.classList.contains("shows__card"))
                 clickedDiv.classList.add("shows__card--clicked");
         }
     };
-
-
-    
-    function setupShows(){
-        const showsSection = document.querySelector('.shows');
-        const showsTitleContainer = document.createElement('div');
-        const showsTitle = document.createElement('h2');
-        showsTitle.innerText = "Shows";
-        showsTitle.classList.add("shows__title");
-        showsTitleContainer.appendChild(showsTitle);
-        const showsSchedule = document.createElement('div');
-        showsSchedule.classList.add("shows__schedule");  
-        showsSection.append(showsTitleContainer, showsSchedule);
-    }
