@@ -49,9 +49,7 @@
         });   
     };
     function submit(){
-            
         const form = document.querySelector(".conv__form");
-
         form.addEventListener("submit", (e) => {
             e.preventDefault();
             axios.post("https://project-1-api.herokuapp.com/comments/?api_key=f8ca13e4-fee9-4e74-8598-bc3b89d638b4", {

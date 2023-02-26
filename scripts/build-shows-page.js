@@ -83,7 +83,7 @@
     function cardClick(e){
         e.preventDefault();
         const cards = document.querySelectorAll('.shows__card');
-        cards.forEach(element => element.classList.remove('shows__card--clicked'))
+        cards.forEach(i => i.classList.remove('shows__card--clicked'))
         if ((e.target.nodeName === 'DIV') && e.target.classList.contains('shows__card')) {
             e.target.classList.add("shows__card--clicked");
         } else {

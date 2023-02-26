@@ -59,7 +59,6 @@ a {
     background-color: $primary-color;
     width: 100%;
 
-
     @include tablet {
         display: flex;
         height: 4.5rem;
@@ -87,7 +86,6 @@ a {
             margin-left: 0rem;
         }
     }
-
     &__lists{
         display: flex;
         width: 100%;
@@ -99,7 +97,6 @@ a {
             justify-content: start;
         }
     }
-
     &__list{
         display: inline-flex;
         flex-direction: row;
@@ -122,7 +119,6 @@ a {
             margin: auto 2rem auto 2rem;
         }
     }
-
     &__link {
         width: 100%;
         color: white;
@@ -133,12 +129,10 @@ a {
         padding-top: 1rem;
         padding-bottom: 1rem;
         justify-content: center;
-       
         &--nonactive:hover{
             font-family: $body-font;
             border-bottom: 4px $white-color solid;
         }
-
         &--active{
             font-family: $body-font;
             border-bottom: 4px $white-color solid;
@@ -155,24 +149,18 @@ a {
     flex-direction: column;
     margin-top: 2rem;
 
-    
-
     &__title {
-        
         margin-bottom: 0;
         padding-bottom: 0;
         order: 1;
         font-size: 2.25rem;
         font-weight: 600;
-        
     }
 
     &__social{
         order: 2;
         display: flex;
         align-items: center;
-       
-        
         @include tablet{
             flex-grow: 1;
             margin-left: 2rem;
@@ -186,7 +174,6 @@ a {
         margin-top: 0.5rem;
         padding: 1rem 2.75rem 0rem 0rem;
         height: 3rem;
-
         @include tablet{
             margin-top: 0rem;
             height: 2rem;
@@ -194,12 +181,8 @@ a {
         }
         @include desktop {
             padding: 0.7rem 2rem 0rem 0rem;
-        }
-      
+        } 
     }
-
-
-
     &__contact{
         order: 3;
         @include tablet {
@@ -207,61 +190,41 @@ a {
             display: flex;
             flex-direction: row;
             width: 100%;
-            //justify-content: space-between;
         }
-
         @include desktop {
             justify-content: start;
             flex-grow: 2;
-    
         }
     }
-
     &__contact-company{
         margin-bottom: 1rem;
-
-
     }
     &__contact-state{
         margin-bottom: 1rem;
-
-        
     }
     &__contact-country{
         margin-bottom: 1rem;
-
-        
     }
-
     &__container-contact{
         margin-top: 2rem;
         font-size: 1rem;
         line-height: 1.5;
         @include tablet {
-       
             font-size: 0.8rem;
             margin-right: 3.81rem;
-
         }
         @include desktop {
-    
             margin-right: 5.7rem;
         }
     }
-
     &__email{
         color: white;
         text-decoration: none;
     }
-
-
-     &__contact-title{
+    &__contact-title{
         font-family: $subheader-font;
         font-weight: 600;
-
-     }
-
-
+    }
     &__image-logo{
         order: 4;
         width: 12.5rem;
@@ -274,9 +237,8 @@ a {
             margin: 0rem 0rem;
             padding: 0.5rem 0rem 0rem 0rem;
             height: 2rem;
- 
-            
-            
+            display: flex;
+            justify-content: flex-end;
         }
     }
 
@@ -297,7 +259,6 @@ a {
         color: #FAFAFA;
         display: flex;
         flex-direction: column;
-  
     
         @include tablet {
             margin: auto;
