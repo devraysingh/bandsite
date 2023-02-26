@@ -1,8 +1,5 @@
-    
-    const form = document.querySelector(".conv__form");
-    const commentsSection = document.querySelector(".comments");
-
     fetchComments();
+    submit();
 
     function fetchComments(){
         axios.get("https://project-1-api.herokuapp.com/comments/?api_key=f8ca13e4-fee9-4e74-8598-bc3b89d638b4")
@@ -15,11 +12,9 @@
     
         })
     }
-
-
-
-
     function displayComment(comments) {
+    
+        const commentsSection = document.querySelector(".comments");
         commentsSection.innerHTML = "";
         //looping through each comment
         comments.forEach((comment) => {
@@ -53,19 +48,21 @@
             commentsSection.appendChild(commentContainer);
         });   
     };
+    function submit(){
+            
+        const form = document.querySelector(".conv__form");
 
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            axios.post("https://project-1-api.herokuapp.com/comments/?api_key=f8ca13e4-fee9-4e74-8598-bc3b89d638b4", {
+                name: e.target.name.value,
+                comment: e.target.comment.value
+            }).then((res) =>{
+                fetchComments();
+            }).catch((error) =>{
+                console.log(error);
+            })
+            form.reset()
+        });
 
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        axios.post("https://project-1-api.herokuapp.com/comments/?api_key=f8ca13e4-fee9-4e74-8598-bc3b89d638b4", {
-            name: e.target.name.value,
-            comment: e.target.comment.value
-        }).then((res) =>{
-            fetchComments();
-        }).catch((error) =>{
-            console.log(error);
-        })
-        form.reset()
-    });
-
-
+    }
