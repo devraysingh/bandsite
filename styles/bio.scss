@@ -4,32 +4,9 @@
 @use 'partials/variables' as *;
 @use 'partials/global' as *;
 
-
-
-
-
-
-
 // Hero Section SASS
 .hero {
-    
     @include hero("../assets/images/hero-bio.jpg");
-  
-
-    @include tablet{
-        justify-content: flex-start;
-        height: 29rem;
-        margin-top: 4.5rem;
-
-    }
-
-
-    @include desktop{
-        justify-content: flex-start;
-        height: 45.5rem;
-        margin-top: 6.01rem;
-    }
-
     &__title-container{
         display: flex;
         margin: 0rem  auto 0rem  1.6rem;
@@ -51,68 +28,59 @@
         color: white;
         font-size: 2rem;
         letter-spacing: 0.1rem;
-        font-family: $subheader-font;
-        
         font-weight: 600;
-
         @include tablet {
             display: flex;
             width: 100%;
             font-size: 3.4rem;
             width: 100%;
-
-      
         }
         @include desktop {
             font-size: 4rem;
             letter-spacing: 0.1rem;
-
-
         }
     }
-}
+    @include tablet{
+        justify-content: flex-start;
+        height: 29rem;
+        margin-top: 4.5rem;
+    }
+    @include desktop{
+        height: 45.5rem;
+        margin-top: 6.01rem;
+    }
 
+}
 // About Section SAS
 .about{
     padding: 1rem;
-
     @include tablet{
         display: flexbox;
         margin: auto;
-
     }
-
     &__title-sec {
         font-weight: 600;
-        font-family: $subheader-font; 
         font-size: 2.25rem;
         margin: 2.75rem 1rem 1rem 1rem;
-
-
         @include tablet{
             font-size: 2.2rem;
-     
         }
-
         @include desktop{
             margin-left: 0rem;
-       
-     
         }
-        
-
     }
 
     &__container-bio{
         display: flex;
         flex-direction: column;    
         width: 90%;
-        padding: 1rem;     
+        padding: 1rem 0; 
         margin: auto;
-
+        @include tablet{
+            padding: 1rem; 
+        }
         @include desktop{
             padding: 1rem 4rem 1rem 4rem;
-     
         }
 
     }
@@ -122,46 +90,34 @@
         width: 100%;
         object-position: bottom;
         width: 100%;
-
         max-height: 20rem;
 
         @include tablet {
-
             max-height: 38rem;
         }  
         @include desktop {
             max-height: 48rem;
-
         }
     }
     &__quote{
         margin: 1.6rem auto auto auto;
-        line-height: 2rem;
-        font-family: $subheader-font;
+        line-height: 1.5rem;
         font-weight: 600;
         flex-wrap: wrap;
         @include tablet{
+            line-height: 2rem;
             font-size: 1.5rem;
             margin: 1.6rem 0rem;
-     
         }
         @include desktop{
             justify-content: center;
-            max-width: 63.75rem;
-
-    
+            max-width: 44.4rem;
         }
-
     }
-
     &__auth{
         margin: 1rem auto auto 0;
         font-weight: 600;
-        font-family: $subheader-font;
-
-
     }
-
     &__container-des{
         display: flex;
         flex-direction: column;
@@ -171,54 +127,34 @@
             width: 90%;
             display: flexbox;
             margin: auto;
-
-    
         }
         @include desktop{
-            padding: 1rem 4rem 1rem 4rem;
-     
-        }
-        
+            padding: 1rem 4rem 1rem 4rem;   
+        } 
     }
-
     &__title-des {
         margin-left: 0rem;
-        font-weight: 700;
         margin-bottom: 1.5rem;
-        font-weight: 400;
+        font-weight: 600;
         @include tablet{
             font-size: 1.5rem;
             line-height: 2.75rem;
         }
-        @include desktop{
-        
-     
-        }
-  
-        
-
-    }
-
-    
+    }    
     &__para-container{
         line-height: 1.5;
-
         @include tablet {
             display: flex;
             flex-direction: row;
         }
-
     }
-
     &__para{
         margin-bottom: 1rem;
         @include tablet {
             padding: 0rem 1.5rem 0rem 0rem;
             font-size: 1rem;
         }
-
     }
-
     @include desktop{
         display: flex;
         margin: 0 auto;
@@ -226,11 +162,7 @@
         flex-direction: column;
         justify-content: center;
         padding: 0rem;
-
     }
-
-
-
 }
 // Gallery Section SASS
 .gallery{
@@ -242,7 +174,6 @@
     &__title {
         font-size: 2.25rem;
         font-weight: 600;
-        font-family: $subheader-font;
     }
 
     &__image {
@@ -250,7 +181,6 @@
         @include tablet {
             width: 33.3%;
             padding: 0.9rem 1.8rem 0.9rem 0rem ;
-        
         }
         &--cornor{
             padding-right: 0;
@@ -279,87 +209,49 @@
             margin: 0 auto;
             padding: 0rem;
         }
-
     }
-
 }
-
+//Form Comment Styling
 .conv {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    @include tablet {
-        max-width: 63.75;
-        display: flex;
-        justify-content: center;
-        margin: 1rem auto;
-        width: 80%;
-        max-width: 40rem;
-
-    }
-    @include desktop {
-        max-width: 63.75;
-        width: 50%;
-
-    }    
-     
     &__section-title{
         font-size: 2.0rem;
         font-weight: 600;
-        font-family: $subheader-font;
         margin: 0rem 0rem 2rem 0rem;
         @include tablet {
             font-size: 2.25rem;
             margin: 1rem 0rem 2rem 0rem;
-  
         }
         @include desktop {
             margin: 3rem 0rem 2rem 0rem;
-
         }
     }
- 
-
     &__form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 85%;
-        @include tablet {
-     
-        }
-        @include desktop{
-      
-     
-        }
     }
-
     &__name-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-   
     }
     &__email-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-   
     }
-
     &__name-label{
         color: #AFAFAF;
         margin-bottom: 1rem;
     }
-
     &__comment-label{
         color: #AFAFAF;
         margin-bottom: 1rem;
-
     }
-
     &__name-input{
         font-size: 1.0rem;
         width: 100%;
@@ -396,7 +288,6 @@
         &:hover{
             background-color: black;
             cursor: pointer;
-
         }:active {
             cursor: pointer;
         }
@@ -408,9 +299,7 @@
         @include desktop {
             width: 44%;
         }
-   
     }
-
     &__btn-cont{
         display: flex;
         @include tablet {
@@ -419,18 +308,13 @@
             justify-content: flex-end;
             
         }
-
     }
-
     &__profile{
         display: flex;
         width: 13%;
         justify-content: flex-end;
 
     }
-
-
-
     &__profile-img{
         margin-top: 1.3rem;
         margin-right: 1.4rem;
@@ -440,31 +324,32 @@
         border-radius: 1.3rem;
         
     }
-
- 
-
     &__section{
-
         padding: 2.4rem 1.6rem 0rem 1.6rem;
-
         @include desktop{
             @include desktop-size;
         }
     }
+    @include tablet {
+        max-width: 63.75;
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto;
+        width: 80%;
+        max-width: 40rem;
+    }
+    @include desktop {
+        max-width: 63.75;
+        width: 50%;
 
+    }  
 }
-
-
-
+//Comments Styling
 .comments{
     padding: 1rem 1.6rem 0rem 1.6rem;
-
-
-
     &__user-cont{
         width: 85%;
     }
-
     &__user-detail {
         display: flex;
         flex-direction: row;
@@ -474,7 +359,6 @@
         display: flex;
         flex-direction: row;
     }
-
     &__avatar-cont {
         justify-content: flex-end;
         border-radius: 1.3rem;
@@ -484,7 +368,6 @@
         margin-right: 1.18rem;
         margin-top: 0.5rem;
     }
-
     &__comment-cont {
         margin: 1rem auto;
         @include tablet {
@@ -496,54 +379,37 @@
             justify-content: center;
             border-top: 1px solid #E1E1E1;
             border-bottom: 1px solid #E1E1E1;
-           
         } 
         @include desktop {
             width: 61%;
         }     
     }
     &__name{
-        font-family: $subheader-font;
         font-weight: 600;
         margin-bottom: 1rem;
-
     }
-
     &__date {
         color: #AFAFAF;
     }
-
-
     &__new-sec {
         opacity: 0.5;
         @include tablet {
             display: flex;
             justify-content: center;
             margin: 1rem auto;
-            width: 80%;
-       
+            width: 80%;       
             max-width: 34rem;
-    
-    
         }
         @include desktop {
             width: 60%;
         }    
-
     }
     @include tablet {
         font-size: 0.8rem;
     }
-
- 
-
     @include desktop {
         @include desktop-size;
         width: 65%;
         max-width: 52rem;
-        
     }
-
-    
-
 }

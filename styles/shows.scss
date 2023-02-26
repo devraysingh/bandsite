@@ -4,43 +4,31 @@
 @use './partials/variables' as *;
 @use './partials/global' as *;
 
-
-
+//Hero Styling
 .hero {
     @include hero("../assets/images/hero-shows.jpg");
-
     margin-top: 5.9rem;
     height: 30rem;
     padding: 1.6rem;
-
     @include tablet {
         justify-content: start;
-
         height: 35rem;
         margin-top: 3.28rem;
-
     }
-
     @include desktop {
         display: flex;
         height: 55rem;
         margin-top: 4.78rem;
         margin: 0 auto;
         justify-content: center;
-        
     }
-
     &__sub-title{
         color: white;
-        font-family: $body-font;
         font-weight: 400;
-    
     }
-
     &__title{
         margin-top: 1rem;
         color: white;
-        font-family: $subheader-font;
         font-weight: 600;
         font-size: 2.7rem;
         margin-bottom: 0rem;
@@ -49,10 +37,8 @@
             word-spacing: 0.7rem;
         }
         @include desktop{
-      
         }
         &__container{
-        
             @include tablet{
                 width: 100%;
                 max-width: 31.9rem;
@@ -62,17 +48,12 @@
                 max-width: 44rem;
                 margin-right: 1.9rem;
             }
-       
         }
-
     }
-
     &__sub-title{
-
         @include tablet{
             font-size: 1.75rem;
         }
-    
     }
     &__song{
         padding: 1rem 0rem;
@@ -80,38 +61,26 @@
         border: none;
         margin-top: 1rem;
         @include tablet{
-   
-     
+
             height: 12.5rem;
             width: 24.5rem;
             font-size: 0.5rem;
-         
-   
         }
         @include desktop {
             height: 12.5rem;
             width: 48%;
         }
     }
-
     &__container {
         display: flex;
         flex-direction: column;
-
-        @include tablet {
-
-           
-
         @include desktop {
             flex-direction: row;
             justify-content: space-evenly;
         }
-
-        }
     }
-
 }
-
+//Shows Styling
 .shows {
     padding: 1rem;
     @include tablet {
@@ -124,23 +93,18 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
-
     }
     &__btn {
         width: 100%;
         padding: 1rem;
         color: #FFFFFF;
         background-color: #323232;
-  
         font-size: 1.5rem;
         border-radius: 0.5rem;
         margin-bottom: 1.5rem;
-
         &:hover{
             background-color: black;
             cursor: pointer;
-
         }
         &:active {
             cursor: pointer;
@@ -150,16 +114,13 @@
             width: 25%;
             font-size: 1rem;
             padding: 1rem 1.2rem;
-  
         }
-      
     }
     &__title-container {
         margin-bottom: 2rem;
     }
     &__title{
         margin: 2rem 0rem 0rem 1rem;
-        font-family: $subheader-font;
         font-weight: 600;
         font-size: 2.2rem;
         color: black;
@@ -178,7 +139,6 @@
     }
 
     &__date{
-        font-family: $subheader-font;
         font-weight: 600;
         margin-bottom: 1rem;
         font-size: 1.25rem; 
@@ -188,7 +148,6 @@
             margin-right: auto;
         }
     }
-
     &__loc{
         font-size: 1.25rem; 
         margin-bottom: 1rem;
@@ -197,7 +156,6 @@
             width: 25%;
         }
     }
-
     &__venue{
         font-size: 1.25rem; 
         margin-bottom: 1rem;
@@ -206,7 +164,6 @@
             width: 25%;
         }
     }
-
     &__new-sec{
         margin-bottom: 1.2rem;
         opacity: 0.1;
@@ -216,17 +173,12 @@
             display: flex;
             flex-direction: row;
             border-color: #E1E1E1;
-
         }
-
     }
-
-
     &__card{
         padding: 1rem;
         border-top: 1px solid #E1E1E1;
         border-bottom: 1px solid #E1E1E1;
-     
         &:hover{
             background-color: #FAFAFA;
             cursor: pointer;
@@ -258,59 +210,43 @@
             flex-direction: row;
             color: #AFAFAF;
             margin-bottom: 1rem;
-
-
         }
     }
-
     &__date-tab{
         @include tablet{
             width: 25%;
             margin: 0rem;
-            font-size: 0.8rem;
-            
-        }
-        
+            font-size: 0.8rem;   
+        }   
     }
     &__venue-tab{
-
         @include tablet{
             width: 25%;
             margin: 0 0 0 0rem;
             font-size: 0.8rem;
-
         }
-        
     }
     &__loc-tab{
         @include tablet{
             width: 25%;
             margin: 0;
             font-size: 0.8rem;
-
         }
-        
     }
-
     &__loc-spacer{
         @include tablet{
             width: 25%;
             margin: 0;
-
         }
-        
     }
-
     &__loc--space{
         visibility: hidden;
         width: 12%;
     }
-
     &__schedule{
         @include desktop{
             width: 78%;
             margin-top: 3rem;
         }
     }
-
 }

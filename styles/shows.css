@@ -127,7 +127,6 @@ a {
   .nav__list {
     padding: 0rem;
     font-size: 0.875rem;
-    font-family: "AvenirNext LT Pro";
     font-weight: 600;
     width: auto;
     display: flex;
@@ -147,11 +146,9 @@ a {
   justify-content: center;
 }
 .nav__link--nonactive:hover {
-  font-family: "AvenirNext LT Pro";
   border-bottom: 4px #FFFFFF solid;
 }
 .nav__link--active {
-  font-family: "AvenirNext LT Pro";
   border-bottom: 4px #FFFFFF solid;
 }
 
@@ -250,7 +247,6 @@ a {
   text-decoration: none;
 }
 .footer__contact-title {
-  font-family: "AvenirNext LT Pro";
   font-weight: 600;
 }
 .footer__image-logo {
@@ -340,13 +336,11 @@ a {
 }
 .hero__sub-title {
   color: white;
-  font-family: "AvenirNext LT Pro";
   font-weight: 400;
 }
 .hero__title {
   margin-top: 1rem;
   color: white;
-  font-family: "AvenirNext LT Pro";
   font-weight: 600;
   font-size: 2.7rem;
   margin-bottom: 0rem;
@@ -398,7 +392,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 48rem) and (min-width: 80rem) {
+@media screen and (min-width: 80rem) {
   .hero__container {
     flex-direction: row;
     justify-content: space-evenly;
@@ -457,7 +451,6 @@ a {
 }
 .shows__title {
   margin: 2rem 0rem 0rem 1rem;
-  font-family: "AvenirNext LT Pro";
   font-weight: 600;
   font-size: 2.2rem;
   color: black;
@@ -478,7 +471,6 @@ a {
   }
 }
 .shows__date {
-  font-family: "AvenirNext LT Pro";
   font-weight: 600;
   margin-bottom: 1rem;
   font-size: 1.25rem;

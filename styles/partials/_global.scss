@@ -13,7 +13,7 @@
 }
 
 h1, h2, h3, h4 {
-    font-family: $subheader-font;
+    font-family: $body-font;
     font-weight: 600;
 }
 
@@ -55,10 +55,8 @@ a {
 
 // Nav Section Sass
 .nav {
-
     background-color: $primary-color;
     width: 100%;
-
     @include tablet {
         display: flex;
         height: 4.5rem;
@@ -107,11 +105,9 @@ a {
         font-weight: 700;
         align-items: center;
         justify-content: center;
-
         @include tablet {
             padding: 0rem;
             font-size: 0.875rem;
-            font-family: $subheader-font;
             font-weight: 600;
             width: auto;
             display: flex;
@@ -130,11 +126,9 @@ a {
         padding-bottom: 1rem;
         justify-content: center;
         &--nonactive:hover{
-            font-family: $body-font;
             border-bottom: 4px $white-color solid;
         }
         &--active{
-            font-family: $body-font;
             border-bottom: 4px $white-color solid;
         }
     }
@@ -148,7 +142,6 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-
     &__title {
         margin-bottom: 0;
         padding-bottom: 0;
@@ -169,7 +162,6 @@ a {
             margin-left: 3.8rem;
         }
     }
-
     &__image {
         margin-top: 0.5rem;
         padding: 1rem 2.75rem 0rem 0rem;
@@ -222,7 +214,6 @@ a {
         text-decoration: none;
     }
     &__contact-title{
-        font-family: $subheader-font;
         font-weight: 600;
     }
     &__image-logo{
@@ -241,7 +232,6 @@ a {
             justify-content: flex-end;
         }
     }
-
     &__copyright {
         order: 5;
         @include tablet{

@@ -127,7 +127,6 @@ a {
   .nav__list {
     padding: 0rem;
     font-size: 0.875rem;
-    font-family: "AvenirNext LT Pro";
     font-weight: 600;
     width: auto;
     display: flex;
@@ -147,11 +146,9 @@ a {
   justify-content: center;
 }
 .nav__link--nonactive:hover {
-  font-family: "AvenirNext LT Pro";
   border-bottom: 4px #FFFFFF solid;
 }
 .nav__link--active {
-  font-family: "AvenirNext LT Pro";
   border-bottom: 4px #FFFFFF solid;
 }
 
@@ -250,7 +247,6 @@ a {
   text-decoration: none;
 }
 .footer__contact-title {
-  font-family: "AvenirNext LT Pro";
   font-weight: 600;
 }
 .footer__image-logo {
@@ -319,20 +315,6 @@ a {
   align-items: center;
   justify-content: center;
 }
-@media screen and (min-width: 48rem) {
-  .hero {
-    justify-content: flex-start;
-    height: 29rem;
-    margin-top: 4.5rem;
-  }
-}
-@media screen and (min-width: 80rem) {
-  .hero {
-    justify-content: flex-start;
-    height: 45.5rem;
-    margin-top: 6.01rem;
-  }
-}
 .hero__title-container {
   display: flex;
   margin: 0rem auto 0rem 1.6rem;
@@ -354,7 +336,6 @@ a {
   color: white;
   font-size: 2rem;
   letter-spacing: 0.1rem;
-  font-family: "AvenirNext LT Pro";
   font-weight: 600;
 }
 @media screen and (min-width: 48rem) {
@@ -371,6 +352,19 @@ a {
     letter-spacing: 0.1rem;
   }
 }
+@media screen and (min-width: 48rem) {
+  .hero {
+    justify-content: flex-start;
+    height: 29rem;
+    margin-top: 4.5rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .hero {
+    height: 45.5rem;
+    margin-top: 6.01rem;
+  }
+}
 
 .about {
   padding: 1rem;
@@ -383,7 +377,6 @@ a {
 }
 .about__title-sec {
   font-weight: 600;
-  font-family: "AvenirNext LT Pro";
   font-size: 2.25rem;
   margin: 2.75rem 1rem 1rem 1rem;
 }
@@ -401,8 +394,13 @@ a {
   display: flex;
   flex-direction: column;
   width: 90%;
-  padding: 1rem;
+  padding: 1rem 0;
   margin: auto;
+}
+@media screen and (min-width: 48rem) {
+  .about__container-bio {
+    padding: 1rem;
+  }
 }
 @media screen and (min-width: 80rem) {
   .about__container-bio {
@@ -431,13 +429,13 @@ a {
 }
 .about__quote {
   margin: 1.6rem auto auto auto;
-  line-height: 2rem;
-  font-family: "AvenirNext LT Pro";
+  line-height: 1.5rem;
   font-weight: 600;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 48rem) {
   .about__quote {
+    line-height: 2rem;
     font-size: 1.5rem;
     margin: 1.6rem 0rem;
   }
@@ -445,13 +443,12 @@ a {
 @media screen and (min-width: 80rem) {
   .about__quote {
     justify-content: center;
-    max-width: 63.75rem;
+    max-width: 44.4rem;
   }
 }
 .about__auth {
   margin: 1rem auto auto 0;
   font-weight: 600;
-  font-family: "AvenirNext LT Pro";
 }
 .about__container-des {
   display: flex;
@@ -473,9 +470,8 @@ a {
 }
 .about__title-des {
   margin-left: 0rem;
-  font-weight: 700;
   margin-bottom: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 @media screen and (min-width: 48rem) {
   .about__title-des {
@@ -521,7 +517,6 @@ a {
 .gallery__title {
   font-size: 2.25rem;
   font-weight: 600;
-  font-family: "AvenirNext LT Pro";
 }
 .gallery__image {
   padding: 1rem 0rem;
@@ -563,26 +558,9 @@ a {
   flex-direction: row;
   justify-content: space-between;
 }
-@media screen and (min-width: 48rem) {
-  .conv {
-    max-width: 63.75;
-    display: flex;
-    justify-content: center;
-    margin: 1rem auto;
-    width: 80%;
-    max-width: 40rem;
-  }
-}
-@media screen and (min-width: 80rem) {
-  .conv {
-    max-width: 63.75;
-    width: 50%;
-  }
-}
 .conv__section-title {
   font-size: 2rem;
   font-weight: 600;
-  font-family: "AvenirNext LT Pro";
   margin: 0rem 0rem 2rem 0rem;
 }
 @media screen and (min-width: 48rem) {
@@ -708,6 +686,22 @@ a {
     padding: 0rem;
   }
 }
+@media screen and (min-width: 48rem) {
+  .conv {
+    max-width: 63.75;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    width: 80%;
+    max-width: 40rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .conv {
+    max-width: 63.75;
+    width: 50%;
+  }
+}
 
 .comments {
   padding: 1rem 1.6rem 0rem 1.6rem;
@@ -754,7 +748,6 @@ a {
   }
 }
 .comments__name {
-  font-family: "AvenirNext LT Pro";
   font-weight: 600;
   margin-bottom: 1rem;
 }
