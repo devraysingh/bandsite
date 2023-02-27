@@ -1,7 +1,7 @@
     //invoking functions for shows setup
     setupShows();    
     fetchComments();
-    showsLabels();
+    showsLabel();
     //function declaration
     function setupShows(){
         const showsSection = document.querySelector('.shows');
