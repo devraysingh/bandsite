@@ -447,16 +447,11 @@ a {
     padding: 0.8rem 0rem;
   }
 }
-@media screen and (min-width: 80rem) {
-  .shows__btn {
-    padding: 0.8rem 0rem;
-  }
-}
-.shows__btn--container {
+.shows__btn-container {
   width: 100%;
 }
 @media screen and (min-width: 48rem) {
-  .shows__btn--container {
+  .shows__btn-container {
     width: 25%;
     display: flex;
     justify-content: flex-end;
@@ -565,14 +560,14 @@ a {
 @media screen and (min-width: 48rem) {
   .shows__date-tab {
     width: 25%;
-    margin: 0rem;
+    margin: 0;
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 48rem) {
   .shows__venue-tab {
     width: 25%;
-    margin: 0 0 0 0rem;
+    margin: 0;
     font-size: 0.8rem;
   }
 }
@@ -588,10 +583,6 @@ a {
     width: 25%;
     margin: 0;
   }
-}
-.shows__loc--space {
-  visibility: hidden;
-  width: 12%;
 }
 @media screen and (min-width: 80rem) {
   .shows__schedule {

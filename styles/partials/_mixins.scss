@@ -38,3 +38,9 @@
     margin: 0 auto;
     padding: 0rem;
 }
+
+@mixin shows-label-preset{
+    width: 25%;
+    margin: 0;
+    font-size: 0.8rem;   
+}

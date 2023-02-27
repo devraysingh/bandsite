@@ -665,12 +665,22 @@ a {
 }
 .conv__profile-img {
   margin-top: 1.3rem;
-  margin-right: 1.4rem;
+  margin-right: 1rem;
   width: 2.75em;
   height: 2.75rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1.3rem;
+}
+@media screen and (min-width: 48rem) {
+  .conv__profile-img {
+    margin-right: 1.4rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .conv__profile-img {
+    margin-right: 1.2rem;
+  }
 }
 .conv__section {
   padding: 2.4rem 1.6rem 0rem 1.6rem;
@@ -707,15 +717,12 @@ a {
 }
 .comments__user-cont {
   width: 85%;
+  padding-left: 0.5rem;
 }
 .comments__user-detail {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.comments__comment-cont {
-  display: flex;
-  flex-direction: row;
 }
 .comments__avatar-cont {
   justify-content: flex-end;
@@ -726,7 +733,9 @@ a {
   margin-right: 1.18rem;
 }
 .comments__comment-cont {
-  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem 0rem;
   border-top: 0.5px solid #E1E1E1;
   border-bottom: 0.5px solid #E1E1E1;
 }

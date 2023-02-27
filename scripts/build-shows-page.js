@@ -77,7 +77,7 @@
             venueName.classList.add("shows__venue");
             locLabel.classList.add("shows__label");
             locName.classList.add("shows__loc");
-            buttonContainer.classList.add("shows__btn--container");
+            buttonContainer.classList.add("shows__btn-container");
             button.classList.add("shows__btn");
             //html insertion
             buttonContainer.appendChild(button);

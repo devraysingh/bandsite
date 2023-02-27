@@ -36,8 +36,6 @@
             font-size: 3.5rem;
             word-spacing: 0.7rem;
         }
-        @include desktop{
-        }
         &__container{
             @include tablet{
                 width: 100%;
@@ -61,7 +59,6 @@
         border: none;
         margin-top: 1rem;
         @include tablet{
-
             height: 12.5rem;
             width: 24.5rem;
             font-size: 0.5rem;
@@ -108,7 +105,7 @@
         }
         &:active {
             cursor: pointer;
-          }
+        }
         @include tablet {
             width: 80%;
             margin-bottom: 0rem;
@@ -116,16 +113,13 @@
             font-size: 0.9rem;
             padding: 0.8rem 0rem;
         }
-        @include desktop {
-            padding: 0.8rem 0rem;
-        }
-        &--container{
-            width: 100%;
-            @include tablet {
-                width: 25%;
-                display: flex;
-                justify-content: flex-end;
-            }
+    }
+    &__btn-container{
+        width: 100%;
+        @include tablet {
+            width: 25%;
+            display: flex;
+            justify-content: flex-end;
         }
     }
     &__title-container {
@@ -219,23 +213,17 @@
     }
     &__date-tab{
         @include tablet{
-            width: 25%;
-            margin: 0rem;
-            font-size: 0.8rem;   
+            @include shows-label-preset;
         }   
     }
     &__venue-tab{
         @include tablet{
-            width: 25%;
-            margin: 0 0 0 0rem;
-            font-size: 0.8rem;
+            @include shows-label-preset;
         }
     }
     &__loc-tab{
         @include tablet{
-            width: 25%;
-            margin: 0;
-            font-size: 0.8rem;
+            @include shows-label-preset;
         }
     }
     &__loc-spacer{
@@ -243,10 +231,6 @@
             width: 25%;
             margin: 0;
         }
-    }
-    &__loc--space{
-        visibility: hidden;
-        width: 12%;
     }
     &__schedule{
         @include desktop{

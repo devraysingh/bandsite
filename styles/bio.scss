@@ -185,8 +185,6 @@
         &--cornor{
             padding-right: 0;
         }
-
-        
     }
     &__image-container {
         display: flex;
@@ -315,11 +313,17 @@
     }
     &__profile-img{
         margin-top: 1.3rem;
-        margin-right: 1.4rem;
+        margin-right: 1rem;
         width: 2.75em;
         height: 2.75rem;
         object-fit: cover;
         border-radius: 1.3rem;
+        @include tablet{
+            margin-right: 1.4rem;
+        }
+        @include desktop{
+            margin-right: 1.2rem;
+        }
         
     }
     &__section{
@@ -347,15 +351,12 @@
     padding: 1rem 1.6rem 0rem 1.6rem;
     &__user-cont{
         width: 85%;
+        padding-left: 0.5rem;
     }
     &__user-detail {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-    &__comment-cont {
-        display: flex;
-        flex-direction: row;
     }
     &__avatar-cont {
         justify-content: flex-end;
@@ -366,7 +367,9 @@
         margin-right: 1.18rem;
     }
     &__comment-cont {
-        padding: 1rem 0rem;
+        display: flex;
+        flex-direction: row;
+        padding: 1.5rem 0rem;
         border-top: 0.5px solid #E1E1E1;
         border-bottom: 0.5px solid #E1E1E1;
         @include tablet {
