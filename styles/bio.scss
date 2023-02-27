@@ -257,8 +257,10 @@
         height: 3rem;
         padding-left: 1rem;
         margin-bottom: 2rem;
+    }&__name-input:focus{
+        outline: none;
+        border: 2px solid black;
     }
-
     &__comment-input {
         background-color: #FAFAFA;
         font-size: 1rem;
@@ -269,7 +271,9 @@
         padding-bottom: 4rem;
         padding-left: 1rem;
         margin: 1rem 0rem;
-
+    }&__comment-input:focus{
+        outline: none;
+        border: 2px solid black;
     }
     &__btn{
         width: 100%;

@@ -615,6 +615,10 @@ a {
   padding-left: 1rem;
   margin-bottom: 2rem;
 }
+.conv__name-input:focus {
+  outline: none;
+  border: 2px solid black;
+}
 .conv__comment-input {
   background-color: #FAFAFA;
   font-size: 1rem;
@@ -625,6 +629,10 @@ a {
   padding-bottom: 4rem;
   padding-left: 1rem;
   margin: 1rem 0rem;
+}
+.conv__comment-input:focus {
+  outline: none;
+  border: 2px solid black;
 }
 .conv__btn {
   width: 100%;

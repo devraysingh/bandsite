@@ -193,7 +193,6 @@
             border-bottom: 1px solid #E1E1E1;
         }
         @include tablet{
-            padding: 1rem 0;
             display: flex;
             flex-direction: row;
             align-items: baseline;
@@ -209,6 +208,7 @@
             flex-direction: row;
             color: #AFAFAF;
             margin-bottom: 1rem;
+            padding: 0 1rem;
         }
     }
     &__date-tab{
