@@ -1,6 +1,8 @@
+    //invoking functions for shows setup
     setupShows();    
     fetchComments();
-    showsMenu();
+    showsLabels();
+    //function declaration
     function setupShows(){
         const showsSection = document.querySelector('.shows');
         const showsTitleContainer = document.createElement('div');
@@ -13,7 +15,8 @@
         showsSchedule.classList.add("shows__schedule");  
         showsSection.append(showsTitleContainer, showsSchedule);
     }
-    function showsMenu(){
+    //insert showsMenu
+    function showsLabel(){
         const showsSchedule = document.querySelector(".shows__schedule");  
         const tabDesMenu = document.createElement("div");
         const dateLabel = document.createElement("p");
@@ -31,6 +34,7 @@
         tabDesMenu.append(dateLabel, venueLabel, locLabel, spacerContainer);
         showsSchedule.append(tabDesMenu);
     };
+    //Fetch comments from API
     function fetchComments(){
         axios.get("https://project-1-api.herokuapp.com/showdates?api_key=f8ca13e4-fee9-4e74-8598-bc3b89d638b4")
         .then((res) => {
@@ -44,6 +48,7 @@
         });
 
     }
+    //Displays the showsCard is called within the fetchComments function
     function showsCard(showsTimes) {
         const showsSchedule = document.querySelector(".shows__schedule");  
         for (const show of showsTimes) {
@@ -89,6 +94,7 @@
         firstChild.classList.add("shows__card--fnode");
         lastChild.classList.add("shows__card--lnode");
     };
+    //Event handler function
     function cardClick(e){
         e.preventDefault();
         const cards = document.querySelectorAll('.shows__card');

@@ -1,31 +1,32 @@
-@font-face {
-    font-family: "AvenirNext LT Pro";
-    src: url("../assets/fonts/woff2/AvenirNextLTPro-Regular.woff2") format("woff2"), 
-         url("../assets/fonts/woff/AvenirNextLTPro-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  //Font Family for Website
+  @font-face {
+      font-family: "AvenirNext LT Pro";
+      src: url("../assets/fonts/woff2/AvenirNextLTPro-Regular.woff2") format("woff2"), 
+          url("../assets/fonts/woff/AvenirNextLTPro-Regular.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+
+    }
+
+
+    @font-face {
+      font-family: 'AvenirNext LT Pro';
+      src: url("../assets/fonts/woff2/AvenirNextLTPro-Demi.woff2") format('woff2'),
+          url("../assets/fonts/woff/AvenirNextLTPro-Demi.woff") format('woff');
+      font-weight: 600;
+      font-style: normal;
 
   }
 
 
-  @font-face {
-    font-family: 'AvenirNext LT Pro';
-    src: url("../assets/fonts/woff2/AvenirNextLTPro-Demi.woff2") format('woff2'),
-        url("../assets/fonts/woff/AvenirNextLTPro-Demi.woff") format('woff');
-    font-weight: 600;
-    font-style: normal;
 
-}
-
-
-
-  @font-face {
-    font-family: "AvenirNext LT Pro";
-    src: url("../assets/fonts/woff2/AvenirNextLTPro-Bold.woff2") format("woff2"), 
-         url("../assets/fonts/woff/AvenirNextLTPro-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: bold;
-  }
+    @font-face {
+      font-family: "AvenirNext LT Pro";
+      src: url("../assets/fonts/woff2/AvenirNextLTPro-Bold.woff2") format("woff2"), 
+          url("../assets/fonts/woff/AvenirNextLTPro-Bold.woff") format("woff");
+      font-weight: 700;
+      font-style: bold;
+    }
 
 
 

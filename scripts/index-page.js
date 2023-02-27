@@ -1,6 +1,8 @@
+    //invoking functions for shows setup
     fetchComments();
-    submit();
-
+    listen();
+    //function declaration
+    //fetching comments from the API
     function fetchComments(){
         axios.get("https://project-1-api.herokuapp.com/comments/?api_key=f8ca13e4-fee9-4e74-8598-bc3b89d638b4")
         .then((res) => {
@@ -12,6 +14,7 @@
     
         })
     }
+    //Displaying Comments invoked from Fetch Comments
     function displayComment(comments) {
     
         const commentsSection = document.querySelector(".comments");
@@ -55,7 +58,8 @@
         lastChild.classList.add("comments__comment-cont--lnode");
 
     };
-    function submit(){
+    //Event Listener Setup;
+    function listen(){
         const form = document.querySelector(".conv__form");
         form.addEventListener("submit", (e) => {
             e.preventDefault();
