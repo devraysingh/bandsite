@@ -7,6 +7,7 @@
         const showsTitle = document.createElement('h2');
         showsTitle.innerText = "Shows";
         showsTitle.classList.add("shows__title");
+        showsTitleContainer.classList.add("shows__title-container");
         showsTitleContainer.appendChild(showsTitle);
         const showsSchedule = document.createElement('div');
         showsSchedule.classList.add("shows__schedule");  
