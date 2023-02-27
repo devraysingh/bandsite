@@ -47,6 +47,13 @@
             commentContainer.append(avatarContainer, userComment);
             commentsSection.appendChild(commentContainer);
         });   
+
+        const firstChild = commentsSection.firstElementChild;
+        const lastChild = commentsSection.lastElementChild;
+
+        firstChild.classList.add("comments__comment-cont--fnode");
+        lastChild.classList.add("comments__comment-cont--lnode");
+
     };
     function submit(){
         const form = document.querySelector(".conv__form");

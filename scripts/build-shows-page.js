@@ -44,9 +44,10 @@
 
     }
     function showsCard(showsTimes) {
+        const showsSchedule = document.querySelector(".shows__schedule");  
         for (const show of showsTimes) {
             //Element Creation for Show Card 
-            const showsSchedule = document.querySelector(".shows__schedule");  
+
             const dateLabel = document.createElement("p");
             const venueLabel = document.createElement("p");
             const locLabel = document.createElement("p");
@@ -79,6 +80,10 @@
             showCard.append(dateLabel, showDate, venueLabel, venueName, locLabel, locName, button);
             showsSchedule.appendChild(showCard);
         };
+        const firstChild = showsSchedule.children[1];
+        const lastChild = showsSchedule.lastElementChild;
+        firstChild.classList.add("shows__card--fnode");
+        lastChild.classList.add("shows__card--lnode");
     };
     function cardClick(e){
         e.preventDefault();

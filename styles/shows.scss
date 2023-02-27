@@ -177,8 +177,8 @@
     }
     &__card{
         padding: 1rem;
-        border-top: 1px solid #E1E1E1;
-        border-bottom: 1px solid #E1E1E1;
+        border-top: 0.5px solid #E1E1E1;
+        border-bottom: 0.5px solid #E1E1E1;
         &:hover{
             background-color: #FAFAFA;
             cursor: pointer;
@@ -191,6 +191,11 @@
         }
         &:active {
             cursor: pointer;
+        }&--fnode{
+            border-top: 1px solid #E1E1E1;
+        }
+        &--lnode{
+            border-bottom: 1px solid #E1E1E1;
         }
         @include tablet{
             padding: 1rem 0;
