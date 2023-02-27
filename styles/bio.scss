@@ -169,7 +169,7 @@
     background-color: $secondary-color;
     display: flex;
     flex-direction: column;
-    padding:2.4rem 1.6rem 0rem 1.6rem;
+    padding:2.4rem 1.6rem 2rem 1.6rem;
 
     &__title {
         font-size: 2.25rem;
@@ -194,9 +194,7 @@
         @include tablet {
             flex-direction: row;
             flex-wrap: wrap;
-            margin-bottom: 1rem;
-            margin-right: 0;
-        
+            margin: 1rem 0rem 1rem 0rem;
         }
         
     }

@@ -56,6 +56,7 @@
             const showDate = document.createElement("p");   
             const venueName = document.createElement("p"); 
             const locName = document.createElement("p");
+            const buttonContainer  = document.createElement("div");
             const button = document.createElement("button");
             const date = new Date(show.date);
             const conditions = { weekday: 'short', month: 'short', day: '2-digit', year: 'numeric' };
@@ -76,9 +77,11 @@
             venueName.classList.add("shows__venue");
             locLabel.classList.add("shows__label");
             locName.classList.add("shows__loc");
+            buttonContainer.classList.add("shows__btn--container");
             button.classList.add("shows__btn");
             //html insertion
-            showCard.append(dateLabel, showDate, venueLabel, venueName, locLabel, locName, button);
+            buttonContainer.appendChild(button);
+            showCard.append(dateLabel, showDate, venueLabel, venueName, locLabel, locName, buttonContainer);
             showsSchedule.appendChild(showCard);
         };
         const firstChild = showsSchedule.children[1];

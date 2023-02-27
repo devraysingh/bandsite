@@ -100,7 +100,7 @@
         color: #FFFFFF;
         background-color: #323232;
         font-size: 1.5rem;
-        border-radius: 0.5rem;
+        border-radius: 0.4rem;
         margin-bottom: 1.5rem;
         &:hover{
             background-color: black;
@@ -110,10 +110,22 @@
             cursor: pointer;
           }
         @include tablet {
+            width: 80%;
             margin-bottom: 0rem;
-            width: 25%;
-            font-size: 1rem;
-            padding: 1rem 1.2rem;
+            max-width: 11.5625rem;
+            font-size: 0.9rem;
+            padding: 0.8rem 0rem;
+        }
+        @include desktop {
+            padding: 0.8rem 0rem;
+        }
+        &--container{
+            width: 100%;
+            @include tablet {
+                width: 25%;
+                display: flex;
+                justify-content: flex-end;
+            }
         }
     }
     &__title-container {
@@ -164,17 +176,6 @@
             width: 25%;
         }
     }
-    &__new-sec{
-        margin-bottom: 1.2rem;
-        opacity: 0.1;
-        position: relative;
-        @include tablet{
-            margin-bottom: 0rem;
-            display: flex;
-            flex-direction: row;
-            border-color: #E1E1E1;
-        }
-    }
     &__card{
         padding: 1rem;
         border-top: 0.5px solid #E1E1E1;
@@ -192,7 +193,7 @@
         &:active {
             cursor: pointer;
         }&--fnode{
-            border-top: 1px solid #E1E1E1;
+            border-top: 0px;
         }
         &--lnode{
             border-bottom: 1px solid #E1E1E1;
@@ -201,8 +202,7 @@
             padding: 1rem 0;
             display: flex;
             flex-direction: row;
-            
-            align-items: self-end;
+            align-items: baseline;
             
         }
     }
