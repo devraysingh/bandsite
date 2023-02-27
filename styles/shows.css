@@ -540,7 +540,7 @@ a {
   cursor: pointer;
 }
 .shows__card--fnode {
-  border-top: 0px;
+  border-top: 0;
 }
 .shows__card--lnode {
   border-bottom: 1px solid #E1E1E1;
